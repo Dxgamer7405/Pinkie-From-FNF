@@ -133,6 +133,11 @@ class MainMenuState extends MusicBeatState
 
 		doof.finishThing = playmus;
 		doof.scrollFactor.set();
+	
+    #if android
+  	addVirtualPad(UP_DOWN, A_B);
+    #end
+		
 		super.create();
 	}
 

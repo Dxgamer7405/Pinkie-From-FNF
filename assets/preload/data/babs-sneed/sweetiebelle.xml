@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sweetiebelle.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sweetiebelle0000" x="0" y="0" width="143" height="171" frameX="-2" frameY="0" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0001" x="145" y="0" width="143" height="171" frameX="-2" frameY="0" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0002" x="290" y="0" width="143" height="170" frameX="0" frameY="-1" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0003" x="0" y="173" width="143" height="170" frameX="0" frameY="-1" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0004" x="145" y="173" width="144" height="166" frameX="0" frameY="-5" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0005" x="291" y="173" width="144" height="166" frameX="0" frameY="-5" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0006" x="0" y="345" width="145" height="167" frameX="-1" frameY="-4" frameWidth="146" frameHeight="171"/>
+	<SubTexture name="sweetiebelle0007" x="147" y="345" width="145" height="167" frameX="-1" frameY="-4" frameWidth="146" frameHeight="171"/>
+</TextureAtlas>

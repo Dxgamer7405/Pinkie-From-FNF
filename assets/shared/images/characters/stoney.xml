@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="stoney.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="stoney down0000" x="0" y="0" width="447" height="481" frameX="0" frameY="-4" frameWidth="447" frameHeight="485"/>
+	<SubTexture name="stoney down0001" x="0" y="0" width="447" height="481" frameX="0" frameY="-4" frameWidth="447" frameHeight="485"/>
+	<SubTexture name="stoney down0002" x="448" y="0" width="443" height="485" frameX="-1" frameY="0" frameWidth="447" frameHeight="485"/>
+	<SubTexture name="stoney horse0000" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0001" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0002" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0003" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0004" x="1328" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0005" x="1328" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0006" x="1328" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0007" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0008" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0009" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0010" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0011" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0012" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0013" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0014" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0015" x="1764" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0016" x="1764" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0017" x="2200" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0018" x="2200" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0019" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0020" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0021" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0022" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0023" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0024" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0025" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0026" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0027" x="2636" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0028" x="2636" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0029" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0030" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0031" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0032" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0033" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0034" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney horse0035" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0036" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0037" x="3072" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0038" x="3072" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0039" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0040" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0041" x="3508" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0042" x="3508" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0043" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0044" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0045" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0046" x="892" y="0" width="435" height="485"/>
+	<SubTexture name="stoney horse0047" x="0" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0048" x="0" y="486" width="435" height="485"/>
+	<SubTexture name="stoney horse0049" x="0" y="486" width="435" height="485"/>
+	<SubTexture name="stoney idle0000" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney left0000" x="872" y="486" width="446" height="484"/>
+	<SubTexture name="stoney left0001" x="872" y="486" width="446" height="484"/>
+	<SubTexture name="stoney left0002" x="1319" y="486" width="442" height="484" frameX="-4" frameY="0" frameWidth="446" frameHeight="484"/>
+	<SubTexture name="stoney right0000" x="1762" y="486" width="429" height="486" frameX="-4" frameY="0" frameWidth="433" frameHeight="486"/>
+	<SubTexture name="stoney right0001" x="1762" y="486" width="429" height="486" frameX="-4" frameY="0" frameWidth="433" frameHeight="486"/>
+	<SubTexture name="stoney right0002" x="2192" y="486" width="432" height="486" frameX="0" frameY="0" frameWidth="433" frameHeight="486"/>
+	<SubTexture name="stoney up0000" x="2625" y="486" width="425" height="488" frameX="-2" frameY="0" frameWidth="429" frameHeight="488"/>
+	<SubTexture name="stoney up0001" x="2625" y="486" width="425" height="488" frameX="-2" frameY="0" frameWidth="429" frameHeight="488"/>
+	<SubTexture name="stoney up0002" x="3051" y="486" width="429" height="485" frameX="0" frameY="-3" frameWidth="429" frameHeight="488"/>
+	<SubTexture name="stoney what0000" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0001" x="3481" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0002" x="0" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0003" x="0" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0004" x="436" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0005" x="436" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0006" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0007" x="872" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0008" x="1308" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0009" x="1308" y="975" width="435" height="485"/>
+	<SubTexture name="stoney what0010" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0011" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0012" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0013" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0014" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0015" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0016" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0017" x="436" y="486" width="435" height="485"/>
+	<SubTexture name="stoney what0018" x="436" y="486" width="435" height="485"/>
+</TextureAtlas>

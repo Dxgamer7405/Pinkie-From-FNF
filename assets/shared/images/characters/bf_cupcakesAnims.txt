@@ -1,0 +1,10 @@
+prefix idle 30 BF idle dance
+prefix singUP 48 BF NOTE UP0
+prefix singLEFT 48 BF NOTE LEFT0
+prefix singRIGHT 48 BF NOTE RIGHT0
+prefix singDOWN 48 BF NOTE DOWN0
+prefix singUPmiss 24 BF NOTE UP MISS
+prefix singLEFTmiss 24 BF NOTE LEFT MISS
+prefix singRIGHTmiss 24 BF NOTE RIGHT MISS
+prefix singDOWNmiss 24 BF NOTE DOWN MISS
+flipx

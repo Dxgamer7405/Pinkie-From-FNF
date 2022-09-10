@@ -1,0 +1,12 @@
+idle 0 0
+talk1 120 10
+talk2 0 128
+singDOWN 20 -170
+singRIGHT -109 -12
+singLEFT 126 9
+idle-alt 0 0
+singUP-alt -90 108
+singDOWN-alt 20 -170
+singRIGHT-alt -109 -12
+singLEFT-alt 126 9
+singUP -90 108

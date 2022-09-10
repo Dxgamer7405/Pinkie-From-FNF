@@ -1,0 +1,6 @@
+prefix idle 24 rarity idle
+prefix singUP 24 rarity up
+prefix singLEFT 24 rarity left
+prefix singDOWN 24 rarity down
+prefix singRIGHT 24 rarity right
+prefix wait 24 rarity wait

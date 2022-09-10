@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scootaloo.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="scootaloo down0000" x="0" y="0" width="173" height="142"/>
+	<SubTexture name="scootaloo down0001" x="175" y="0" width="166" height="139" frameX="-5" frameY="-3" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0002" x="175" y="0" width="166" height="139" frameX="-5" frameY="-3" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0003" x="343" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0004" x="343" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0005" x="511" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0006" x="511" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0007" x="511" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0008" x="511" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo down0009" x="511" y="0" width="166" height="140" frameX="-4" frameY="-2" frameWidth="173" frameHeight="142"/>
+	<SubTexture name="scootaloo idle0000" x="679" y="0" width="175" height="160" frameX="-18" frameY="-4" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0001" x="856" y="0" width="181" height="158" frameX="-12" frameY="-6" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0002" x="1039" y="0" width="187" height="158" frameX="-6" frameY="-6" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0003" x="1228" y="0" width="193" height="158" frameX="0" frameY="-6" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0004" x="1423" y="0" width="193" height="160" frameX="0" frameY="-4" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0005" x="1618" y="0" width="193" height="160" frameX="0" frameY="-4" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0006" x="1813" y="0" width="165" height="164" frameX="-28" frameY="0" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo idle0007" x="0" y="166" width="165" height="164" frameX="-28" frameY="0" frameWidth="193" frameHeight="164"/>
+	<SubTexture name="scootaloo left0000" x="167" y="166" width="185" height="167"/>
+	<SubTexture name="scootaloo left0001" x="354" y="166" width="176" height="167" frameX="-9" frameY="0" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0002" x="354" y="166" width="176" height="167" frameX="-9" frameY="0" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0003" x="532" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0004" x="532" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0005" x="709" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0006" x="709" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0007" x="886" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0008" x="886" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0009" x="886" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0010" x="886" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo left0011" x="886" y="166" width="175" height="166" frameX="-10" frameY="-1" frameWidth="185" frameHeight="167"/>
+	<SubTexture name="scootaloo right0000" x="1063" y="166" width="157" height="160" frameX="-9" frameY="-5" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0001" x="1222" y="166" width="162" height="165" frameX="-3" frameY="0" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0002" x="1222" y="166" width="162" height="165" frameX="-3" frameY="0" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0003" x="1386" y="166" width="164" height="163" frameX="-1" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0004" x="1386" y="166" width="164" height="163" frameX="-1" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0005" x="1552" y="166" width="164" height="163" frameX="-1" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0006" x="1552" y="166" width="164" height="163" frameX="-1" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0007" x="1718" y="166" width="165" height="163" frameX="0" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0008" x="1718" y="166" width="165" height="163" frameX="0" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0009" x="1718" y="166" width="165" height="163" frameX="0" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo right0010" x="1718" y="166" width="165" height="163" frameX="0" frameY="-2" frameWidth="166" frameHeight="165"/>
+	<SubTexture name="scootaloo up0000" x="0" y="335" width="176" height="142" frameX="0" frameY="-58" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0001" x="178" y="335" width="164" height="178" frameX="-10" frameY="-20" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0002" x="344" y="335" width="157" height="176" frameX="-21" frameY="0" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0003" x="503" y="335" width="157" height="176" frameX="-21" frameY="0" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0004" x="662" y="335" width="161" height="173" frameX="-17" frameY="-3" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0005" x="825" y="335" width="161" height="173" frameX="-17" frameY="-3" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0006" x="988" y="335" width="162" height="175" frameX="-17" frameY="-8" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0007" x="1152" y="335" width="162" height="175" frameX="-17" frameY="-8" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0008" x="1316" y="335" width="162" height="172" frameX="-17" frameY="-20" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0009" x="1480" y="335" width="162" height="172" frameX="-17" frameY="-20" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0010" x="1644" y="335" width="163" height="171" frameX="-17" frameY="-27" frameWidth="180" frameHeight="200"/>
+	<SubTexture name="scootaloo up0011" x="1809" y="335" width="163" height="171" frameX="-17" frameY="-27" frameWidth="180" frameHeight="200"/>
+</TextureAtlas>

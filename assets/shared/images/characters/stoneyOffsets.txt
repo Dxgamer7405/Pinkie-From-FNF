@@ -1,0 +1,7 @@
+what 0 0
+idle 0 0
+singRIGHT 0 1
+singDOWN 9 0
+dude 0 0
+singLEFT 6 -1
+singUP -2 3

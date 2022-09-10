@@ -1,0 +1,8 @@
+prefix idle 24 babs idle
+prefix singUP 24 babs up
+prefix singLEFT 24 babs left
+prefix singDOWN 24 babs down
+prefix singRIGHT 24 babs right
+prefix goback 24 babs goback
+prefix jumpin 24 babs jumpin
+camofs 30,0

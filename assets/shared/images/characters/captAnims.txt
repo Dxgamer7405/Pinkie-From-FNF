@@ -1,0 +1,7 @@
+prefix idle 24 capt idle
+prefix singUP 24 capt up
+prefix singLEFT 24 capt left
+prefix singDOWN 24 capt down
+prefix singRIGHT 24 capt right
+prefix look 24 capt look
+camofs -50,40

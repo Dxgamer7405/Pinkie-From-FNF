@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pinkiewhistle.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="pinkieWhistle0000" x="0" y="0" width="1985" height="944"/>
+	<SubTexture name="pinkieWhistle0001" x="1987" y="946" width="1985" height="941" frameX="0" frameY="0" frameWidth="1985" frameHeight="944"/>
+	<SubTexture name="pinkieWhistle0002" x="1987" y="0" width="1985" height="944"/>
+	<SubTexture name="pinkieWhistle0003" x="1987" y="1889" width="1985" height="941" frameX="0" frameY="0" frameWidth="1985" frameHeight="944"/>
+	<SubTexture name="pinkieWhistle0004" x="0" y="946" width="1985" height="944"/>
+	<SubTexture name="pinkieWhistle0005" x="0" y="1892" width="1985" height="941" frameX="0" frameY="0" frameWidth="1985" frameHeight="944"/>
+</TextureAtlas>

@@ -53,6 +53,10 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
+    #if android
+    FlxG.android.preventDefaultKeys = [BACK];
+    #end
+	  /*
 	directories = [];
 	
 	for (i in FileSystem.readDirectory("mods")){
@@ -62,6 +66,7 @@ class TitleState extends MusicBeatState
 			trace(i);
 		}
 	}
+*/
 
 		OptionUtils.bindSave();
 		OptionUtils.loadOptions(OptionUtils.options);

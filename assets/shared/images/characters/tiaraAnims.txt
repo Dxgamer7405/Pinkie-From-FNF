@@ -1,0 +1,9 @@
+prefix idle 24 tiara idle
+prefix singUP 24 tiara up
+prefix singLEFT 24 tiara left
+prefix singDOWN 24 tiara down
+prefix singRIGHT 24 tiara right
+prefix slidein 24 tiara slidein
+prefix blank1 24 tiara blank1
+prefix blank2 24 tiara blank2
+prefix mine 24 tiara mine

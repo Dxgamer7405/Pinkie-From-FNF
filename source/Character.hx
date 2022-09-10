@@ -46,7 +46,7 @@ class Character extends FlxSprite
 				
 				if (PlayState.isPony){
 				
-					var tex = FlxAtlasFrames.fromSparrow('mods/introMod/_append/data/gfpone.png', 'mods/introMod/_append/data/gfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/gfpone.png', 'assets/shared/images/gfpone.xml');
 					frames = tex;
 					
 					
@@ -58,7 +58,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = File.getContent("mods/introMod/_append/data/gfPonyOffsets.txt");
+			var data = File.getContent("assets/shared/images/gfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);
@@ -254,7 +254,7 @@ class Character extends FlxSprite
 
 			case 'bf':
 				if (PlayState.isPony){
-					var tex = FlxAtlasFrames.fromSparrow('mods/introMod/_append/data/bfpone.png', 'mods/introMod/_append/data/bfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/bfpone.png', 'assets/shared/images/bfpone.xml');
 					frames = tex;
 					animation.addByPrefix('idle', 'BF idle', 24, false);
 					animation.addByPrefix('singUP', 'BF up', 24, false);
@@ -274,7 +274,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = File.getContent("mods/introMod/_append/data/bfPonyOffsets.txt");
+			var data = File.getContent("assets/shared/images/bfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);

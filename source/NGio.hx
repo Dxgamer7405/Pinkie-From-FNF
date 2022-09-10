@@ -58,6 +58,7 @@ class NGio
 		}
 	}
 
+/*
 	public function new(api:String, encKey:String, ?sessionId:String)
 	{
 		trace("connecting to newgrounds");
@@ -74,19 +75,21 @@ class NGio
 		{
 			/* a session_id was found in the loadervars, this means the user is playing on newgrounds.com
 			 * and we should login shortly. lets wait for that to happen
-			 */
+			 
 			trace("attempting login");
 			NG.core.onLogin.add(onNGLogin);
 		}
 		else
 		{
-			/* They are NOT playing on newgrounds.com, no session id was found. We must start one manually, if we want to.
+			 They are NOT playing on newgrounds.com, no session id was found. We must start one manually, if we want to.
 			 * Note: This will cause a new browser window to pop up where they can log in to newgrounds
-			 */
+			 
 			NG.core.requestLogin(onNGLogin);
 		}
 	}
+*/
 
+/*
 	function onNGLogin():Void
 	{
 		trace('logged in! user:${NG.core.user.name}');
@@ -101,7 +104,8 @@ class NGio
 
 		ngDataLoaded.dispatch();
 	}
-
+ */
+ 
 	// --- MEDALS
 	function onNGMedalFetch():Void
 	{

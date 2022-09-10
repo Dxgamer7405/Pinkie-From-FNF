@@ -51,8 +51,6 @@ import Shaders;
 import haxe.Exception;
 import openfl.utils.Assets;
 import ModChart;
-#if windows
-
 import vm.lua.LuaVM;
 import vm.lua.Exception;
 import Sys;
@@ -61,7 +59,6 @@ import llua.Convert;
 import llua.Lua;
 import llua.State;
 import llua.LuaL;
-#end
 import sys.io.File;
 import animateatlas.AtlasFrameMaker;
 using StringTools;
@@ -323,9 +320,8 @@ class PlayState extends MusicBeatState
 			FlxG.sound.music.stop();
 
 		//lua = new LuaVM();
-		#if windows
-			luaModchartExists = FileSystem.exists(Paths.modchart(SONG.song.toLowerCase()));
-		#end
+			luaModchartExists = Assets.exists("assets/data/" + songData.chartName.toLowerCase() + "/modchart.lua");
+
 		if (TitleState.curDir == 'assets'){
 			daInst = FlxG.sound.cache(Paths.inst(SONG.song.toLowerCase()));
 			//daVoices = //FlxG.sound.cache(Paths.voices(SONG.song.toLowerCase()));
@@ -335,7 +331,7 @@ class PlayState extends MusicBeatState
 			//daVoicesopenfl.media.Sound.fromFile(Paths.music('freakyMenu'));
 		}
 
-		if (FileSystem.exists(Paths.json(SONG.song.toLowerCase() + '/sliders'))){
+		if (Assets.exists(Paths.json(SONG.song.toLowerCase() + '/sliders'))){
 			SONG.sliderVelocities = Song.loadFromJson('sliders', SONG.song.toLowerCase()).sliderVelocities;
 		}
 		grade = ScoreUtils.gradeArray[0] + " (FC)";
@@ -416,7 +412,7 @@ class PlayState extends MusicBeatState
 					
 					
 					
-					hasEndDialogue = FileSystem.exists(Paths.txt(SONG.song.toLowerCase() + "/dialogueEnd" + (isPony?"-pony":"")));
+					hasEndDialogue = OpenFlAssets.exists(Paths.txt(SONG.song.toLowerCase() + "/dialogueEnd" + (isPony?"-pony":"")));
 					if (currentOptions.lessBS) hasEndDialogue = false;
 					trace(Paths.txt(SONG.song.toLowerCase() + "/dialogueEnd" + (isPony?"-pony":"")));
 				} catch(e){
@@ -1045,6 +1041,10 @@ class PlayState extends MusicBeatState
 		shitsTxt.cameras = [camHUD];
 		highComboTxt.cameras = [camHUD];
 		presetTxt.cameras = [camHUD];
+		#if android
+		addAndroidControls();
+		androidControls.visible = true;
+		#end
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
 		// UI_camera.zoom = 1;
@@ -2123,7 +2123,7 @@ class PlayState extends MusicBeatState
 			var stopLookin = false;
 			for (i in balls){
 				if(!stopLookin){
-					if (FileSystem.exists(i + "/shared/images/"+SONG.strumskin+".xml")){
+					if (OpenFlAssets.exists(i + "/shared/images/"+SONG.strumskin+".xml")){
 						path = i + "/shared/images/"+SONG.strumskin+".xml";
 						stopLookin = true;
 						break;
@@ -2466,7 +2466,7 @@ class PlayState extends MusicBeatState
 			health=0;
 		}
 		previousHealth=health;
-		if (FlxG.keys.justPressed.ENTER && startedCountdown && canPause)
+		if (FlxG.keys.justPressed.ENTER #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			persistentUpdate = false;
 			persistentDraw = true;
@@ -2491,13 +2491,11 @@ class PlayState extends MusicBeatState
 		{
 
 
-			#if windows
 			if(lua!=null){
 				lua.destroy();
 				trace("cringe");
 				lua=null;
 			}
-			#end
 			FlxG.switchState(new ChartingState());
 			Cache.Clear();
 
@@ -2547,23 +2545,19 @@ class PlayState extends MusicBeatState
 				AnimationDebug.isDad = true;
 				FlxG.switchState(new AnimationDebug(SONG.player2));
 				Cache.Clear();
-				#if windows
 				if(lua!=null){
 					lua.destroy();
 					lua=null;
 				}
-				#end
 			}
 			if (FlxG.keys.justPressed.NINE){
 				AnimationDebug.isDad = false;
 				FlxG.switchState(new AnimationDebug(SONG.player1,false));
 				Cache.Clear();
-				#if windows
 				if(lua!=null){
 					lua.destroy();
 					lua=null;
 				}
-				#end
 			}
 		if (startingSong)
 		{
@@ -3195,12 +3189,10 @@ class PlayState extends MusicBeatState
 		FlxG.sound.music.volume = 0;
 		vocals.volume = 0;
 		FlxG.sound.music.stop();
-		#if windows
 		if(lua!=null){
 			lua.destroy();
 			lua=null;
 		}
-		#end
 		if (SONG.validScore)
 		{
 			#if !switch
@@ -3326,7 +3318,7 @@ class PlayState extends MusicBeatState
 					trace(SONG.song.toLowerCase());
 					if (SONG.song.toLowerCase() == 'discord' ){
 						if(isPony){
-							FlxG.switchState(new CutsceneState("mods/introMod/_append/Twi End Cutscene.mp4", function(){
+							FlxG.switchState(new CutsceneState("assets/videos/Twi End Cutscene.mp4", function(){
 								FlxG.switchState(new CutsceneState("assets/videos/credits-pony.mp4", CutsceneState.end ));
 							}));
 						}else{
