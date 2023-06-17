@@ -97,7 +97,7 @@ class Startup extends MusicBeatState
     }
 
   
-
+/*
     function preloadMusic():Void{
         var music = [];
         for (i in FileSystem.readDirectory(Assets.absolutePath("assets/songs")))
@@ -115,7 +115,7 @@ class Startup extends MusicBeatState
         musicDone = true;
     }
     
-    /*function preloadMusic():Void{
+    function preloadMusic():Void{
         for(x in songPreload){
 			FlxG.sound.cache(Paths.inst(x));
 			trace("Chached " + x);
