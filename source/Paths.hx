@@ -33,7 +33,7 @@ class Paths
 		currentLevel = name.toLowerCase();
 	}
 
-	public static function (file:String, type:AssetType, library:Null<String>)
+	public static function getPath(file:String, type:AssetType, library:Null<String>)
 	{
 		if (TitleState.curDir != "assets")
 		{
