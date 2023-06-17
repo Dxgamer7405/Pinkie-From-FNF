@@ -98,7 +98,6 @@
 	<haxelib name="flixel-ui" />
 	<haxelib name="faxe" if='switch'/>
 	<haxelib name="discord_rpc" if="desktop"/>
-	<haxelib name="hxCodec" />
 	<haxelib name="polymod" />
 	<haxelib name="extension-androidtools" if="android" />
 	<haxelib name="linc_luajit" if="desktop || mobile"/>
