@@ -1,8 +1,12 @@
 package;
 import flixel.*;
 import flixel.FlxState;
-import hxCodec.flixel.FlxVideo;
+import hxcodec.flixel.FlxVideo;
 
+/**
+ * ...
+ * @author 
+ */
 class CutsceneState extends MusicBeatState
 {
 	var video:String = "mods/introMod/_append/Twi End Cutscene.mp4";
@@ -14,15 +18,19 @@ class CutsceneState extends MusicBeatState
 		this.next = next;
 	}
 	
-	override function create() 
+	override function create()
 	{
 		super.create();
 		FlxG.sound.music.stop();
 		
 		var video:FlxVideo = new FlxVideo();
-		video.onEndReached.add(video.dispose);
-		video.play(video);
-		
+		video.onEndReached.add(function()
+  {
+    video.dispose();
+    end();
+    });
+
+
 		FlxG.camera.flash(0xff000000, 0.2);
 	}
 	
@@ -30,4 +38,5 @@ class CutsceneState extends MusicBeatState
 		Conductor.changeBPM(110);
 		FlxG.switchState(new StoryMenuState());
 	}
+	
 }
