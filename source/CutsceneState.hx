@@ -19,8 +19,7 @@ class CutsceneState extends MusicBeatState
 		super.create();
 		FlxG.sound.music.stop();
 		
-		var video:FlxVideo = new FlxVideo();
-    video.play(video);
+		var video:FlxVideo = new FlxVideo(video);
 		video.onEndReached.add(function()
   {
     video.dispose();
