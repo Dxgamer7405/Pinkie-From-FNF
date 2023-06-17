@@ -32,7 +32,7 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 	var trixie:FlxSprite;
-		var doof:DialogueBox;
+	var doof:DialogueBox;
 
 	override function create()
 	{

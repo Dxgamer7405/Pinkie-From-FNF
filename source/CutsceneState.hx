@@ -23,6 +23,7 @@ class CutsceneState extends MusicBeatState
 		video.onEndReached.add(function()
   {
     video.dispose();
+    video.play(video);
     end();
     });
 		
