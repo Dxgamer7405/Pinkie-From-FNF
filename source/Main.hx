@@ -121,6 +121,7 @@ class Main extends Sprite
 		Sys.exit(1);
 	}
 	#end
+}
 
 	public function setFPSCap(cap:Float)
 	{
@@ -131,4 +132,3 @@ class Main extends Sprite
 	{
 		return openfl.Lib.current.stage.frameRate;
 	}
-}
