@@ -29,6 +29,10 @@
 			"type":"haxelib"
 		},
 		{
+			"name":"hscript",
+			"type":"haxelib"
+		},
+		{
 			"name":"hxvm-luajit",
 		  "type":"git",
 		  "ref":"master",
