@@ -86,6 +86,15 @@ class Main extends Sprite
 		#end
 	}
 
+	public function setFPSCap(cap:Float)
+	{
+		openfl.Lib.current.stage.frameRate = cap;
+	}
+
+	public function getFPSCap():Float
+	{
+		return openfl.Lib.current.stage.frameRate;
+	}
 	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!
 	// very cool person for real they don't get enough credit for their work
 	#if CRASH_HANDLER
@@ -121,15 +130,4 @@ class Main extends Sprite
 		Sys.exit(1);
 	}
 	#end
-}
-
-	public function setFPSCap(cap:Float)
-	{
-		openfl.Lib.current.stage.frameRate = cap;
-	}
-
-	public function getFPSCap():Float
-	{
-		return openfl.Lib.current.stage.frameRate;
-	}
 }
