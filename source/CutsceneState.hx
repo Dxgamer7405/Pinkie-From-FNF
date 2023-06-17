@@ -1,10 +1,7 @@
 package;
 import flixel.*;
 
-/**
- * ...
- * @author 
- */
+
 class CutsceneState extends MusicBeatState
 {
 	var vido:String = "mods/introMod/_append/Twi End Cutscene.mp4";
