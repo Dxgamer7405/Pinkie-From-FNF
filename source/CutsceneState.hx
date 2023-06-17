@@ -1,7 +1,7 @@
 package;
 import flixel.*;
 import flixel.FlxState;
-import hxcodec.flixel.FlxVideo;
+import hxCodec.flixel.FlxVideo;
 
 class CutsceneState extends MusicBeatState
 {
