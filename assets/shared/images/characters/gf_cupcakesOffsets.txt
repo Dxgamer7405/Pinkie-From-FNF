@@ -1,9 +1,0 @@
-danceLeft 0 0
-danceRight 0 0
-cut 0 0
-gut 0 0
-empty 0 0
-danceLeft-blood 0 0
-danceRight-blood 0 0
-danceLeft-gut 0 0
-danceRight-gut 0 0

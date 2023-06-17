@@ -1,7 +1,0 @@
-singDOWN -10 -60
-singRIGHT -70 0
-danceRight 0 0
-twi -16 -3
-singLEFT 80 -20
-singUP 0 10
-danceLeft 0 0

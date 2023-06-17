@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="bloodsplatter.png">
-	<!-- Created with Adobe Animate version 22.0.1.105 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="bloodsplatter0000" x="0" y="0" width="1281" height="721"/>
-	<SubTexture name="bloodsplatter0001" x="1283" y="0" width="1281" height="721"/>
-	<SubTexture name="bloodsplatter0002" x="2566" y="0" width="1281" height="721"/>
-</TextureAtlas>

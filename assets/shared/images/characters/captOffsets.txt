@@ -1,6 +1,0 @@
-idle 0 0
-singDOWN 0 -60
-singLEFT 120 0
-singRIGHT -110 -10
-singUP -30 50
-look -20 -10

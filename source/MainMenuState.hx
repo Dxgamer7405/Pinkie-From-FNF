@@ -133,11 +133,11 @@ class MainMenuState extends MusicBeatState
 
 		doof.finishThing = playmus;
 		doof.scrollFactor.set();
-	
-    #if android
-  	addVirtualPad(UP_DOWN, A_B);
+
+    #if mobile
+    addVirtualPad(LEFT_FULL, A_B);
     #end
-		
+
 		super.create();
 	}
 
@@ -163,7 +163,18 @@ class MainMenuState extends MusicBeatState
 	}
 	override function update(elapsed:Float)
 	{
-Conductor.songPosition = FlxG.sound.music.time;
+		#if mobile
+    var justTouched:Bool = false;
+		for (touch in FlxG.touches.list)
+		  {
+		  	if (touch.justPressed)
+			   {
+				   justTouched = true;
+			   }
+		   }
+		 #end
+
+    Conductor.songPosition = FlxG.sound.music.time;
 		FlxG.mouse.visible = true;
 		if (FlxG.sound.music.volume < 0.8)
 		{
@@ -174,7 +185,7 @@ Conductor.songPosition = FlxG.sound.music.time;
 		{
 			
 			
-			if (FlxG.mouse.overlaps(trixie) && FlxG.mouse.justPressed && !trixied){
+			if (FlxG.mouse.overlaps(trixie) && FlxG.mouse.justPressed #if mobile || justTouched #end && !trixied){
 				trixied = true;
 		trixie.animation.play('notice');
 				new FlxTimer().start(1, function(e:FlxTimer){

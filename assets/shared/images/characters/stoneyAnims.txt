@@ -1,8 +1,0 @@
-prefix idle 24 stoney idle
-prefix singUP 24 stoney up
-prefix singLEFT 24 stoney right
-prefix singDOWN 24 stoney down
-prefix singRIGHT 24 stoney left
-prefix what 24 stoney what
-prefix dude 24 stoney horse
-flipX

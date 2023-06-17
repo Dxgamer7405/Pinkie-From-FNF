@@ -57,7 +57,7 @@ class Portrait extends FlxSprite
 				
 				var filepath = "assets/shared/images/portrait/" + _character + "_portrait.txt";
 				
-				var rawdata:String = File.getContent(filepath);
+				var rawdata:String = Util.getContent(filepath);
 				var data = rawdata.split("\n");
 				for (i in data){
 					var thing = i.split(":");

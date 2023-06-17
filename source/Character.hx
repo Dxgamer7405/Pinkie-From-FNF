@@ -46,7 +46,7 @@ class Character extends FlxSprite
 				
 				if (PlayState.isPony){
 				
-					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/gfpone.png', 'assets/shared/images/gfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('mods/introMod/_append/data/gfpone.png', 'mods/introMod/_append/data/gfpone.xml');
 					frames = tex;
 					
 					
@@ -58,7 +58,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = File.getContent("assets/shared/images/gfPonyOffsets.txt");
+			var data = Util.getContent("mods/introMod/_append/data/gfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);
@@ -254,7 +254,7 @@ class Character extends FlxSprite
 
 			case 'bf':
 				if (PlayState.isPony){
-					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/bfpone.png', 'assets/shared/images/bfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('mods/introMod/_append/data/bfpone.png', 'mods/introMod/_append/data/bfpone.xml');
 					frames = tex;
 					animation.addByPrefix('idle', 'BF idle', 24, false);
 					animation.addByPrefix('singUP', 'BF up', 24, false);
@@ -274,7 +274,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = File.getContent("assets/shared/images/bfPonyOffsets.txt");
+			var data = Util.getContent("mods/introMod/_append/data/bfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);
@@ -549,7 +549,7 @@ class Character extends FlxSprite
 			/*if(Cache.xmlData[curCharacter]!=null){
 				xmlData=Cache.xmlData[curCharacter];
 			}else{
-				xmlData=File.getContent("assets/shared/images/characters/"+curCharacter+".xml");
+				xmlData=Util.getContent("assets/shared/images/characters/"+curCharacter+".xml");
 				Cache.xmlData[curCharacter]=xmlData;
 			}
 			var bitmapData:BitmapData;
@@ -577,19 +577,19 @@ class Character extends FlxSprite
 					for (i in balls){
 						var boobs = i + "/shared/images/characters/" + curCharacter + "/spritemap.png";
 						trace(boobs);
-						if (FileSystem.exists(boobs)){
+						if (Util.exists(boobs)){
 							path = boobs;
 							break;
 						}
 						boobs = "mods/" + i + "/shared/images/characters/" + curCharacter + "/spritemap.png";
-						if (FileSystem.exists(boobs)){
+						if (Util.exists(boobs)){
 							path = boobs;
 							break;
 						}
 					}
 						
 					trace(curCharacter + ":" + path);
-						frames = AtlasFrameMaker.construct(StringTools.replace(path,'/spritemap.png',''));//FlxAtlasFrames.fromSparrow(getbmp(curCharacter),File.getContent(path));
+						frames = AtlasFrameMaker.construct(StringTools.replace(path,'/spritemap.png',''));//FlxAtlasFrames.fromSparrow(getbmp(curCharacter),Util.getContent(path));
 						Cache.charFrames[curCharacter]=frames;
 
 				}else{
@@ -599,19 +599,19 @@ class Character extends FlxSprite
 					for (i in balls){
 						var boobs = i + "/shared/images/characters/" + curCharacter + ".xml";
 						trace(boobs);
-						if (FileSystem.exists(boobs)){
+						if (Util.exists(boobs)){
 							path = boobs;
 							break;
 						}
 						boobs = "mods/" + i + "/shared/images/characters/" + curCharacter + ".xml";
-						if (FileSystem.exists(boobs)){
+						if (Util.exists(boobs)){
 							path = boobs;
 							break;
 						}
 					}
 						
 					trace(curCharacter + ":" + path);
-						frames = FlxAtlasFrames.fromSparrow(getbmp(curCharacter),File.getContent(path));
+						frames = FlxAtlasFrames.fromSparrow(getbmp(curCharacter),Util.getContent(path));
 						Cache.charFrames[curCharacter]=frames;
 					}
 			}
@@ -689,11 +689,11 @@ class Character extends FlxSprite
 			var balls = tits.split(",");
 			for (i in balls){
 				
-				if (FileSystem.exists(i + "/shared/images/characters/" + curCharacter + ".png")){
+				if (Util.exists(i + "/shared/images/characters/" + curCharacter + ".png")){
 					path = i + "/shared/images/characters/" + curCharacter + ".png";
 					break;
 				}
-				if (FileSystem.exists("mods/"+ i + "/shared/images/characters/" + curCharacter + ".png")){
+				if (Util.exists("mods/"+ i + "/shared/images/characters/" + curCharacter + ".png")){
 					path = "mods/" + i + "/shared/images/characters/" + curCharacter + ".png";
 					break;
 				}
@@ -718,10 +718,10 @@ class Character extends FlxSprite
 		}else{
 			var data;
 			
-			if (FileSystem.exists(TitleState.curDir + "/shared/images/characters/" + curCharacter + "Offsets.txt")){
-				data = File.getContent(TitleState.curDir + "/shared/images/characters/"+curCharacter+"Offsets.txt");
+			if (Util.exists(TitleState.curDir + "/shared/images/characters/" + curCharacter + "Offsets.txt")){
+				data = Util.getContent(TitleState.curDir + "/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}else{
-				data = File.getContent("assets/shared/images/characters/"+curCharacter+"Offsets.txt");
+				data = Util.getContent("assets/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}
 			
 			
@@ -745,10 +745,10 @@ class Character extends FlxSprite
 				var data;
 				
 				
-			if (FileSystem.exists(TitleState.curDir + "/shared/images/characters/" + curCharacter + "Anims.txt")){
-				data = File.getContent(TitleState.curDir + "/shared/images/characters/"+curCharacter+"Anims.txt");
+			if (Util.exists(TitleState.curDir + "/shared/images/characters/" + curCharacter + "Anims.txt")){
+				data = Util.getContent(TitleState.curDir + "/shared/images/characters/"+curCharacter+"Anims.txt");
 			}else{
-				data = File.getContent("assets/shared/images/characters/"+curCharacter+"Anims.txt");
+				data = Util.getContent("assets/shared/images/characters/"+curCharacter+"Anims.txt");
 			}
 				anims = CoolUtil.coolTextFile2(data);
 				Cache.animData[curCharacter] = data;

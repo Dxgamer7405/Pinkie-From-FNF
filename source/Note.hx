@@ -111,7 +111,7 @@ class Note extends FlxSprite
 			}
 			for (i in balls){
 				if (!stopLookin){
-					if (FileSystem.exists(i + "/shared/images/"+daTex+".xml")){
+					if (Util.exists(i + "/shared/images/"+daTex+".xml")){
 						path = i + "/shared/images/"+daTex+".xml";
 						stopLookin = true;
 						break;
@@ -119,7 +119,7 @@ class Note extends FlxSprite
 				}
 			}
 			trace(daTex+": "+path);
-				frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(daTex), File.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
+				frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(daTex), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
 
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');
@@ -203,11 +203,11 @@ class Note extends FlxSprite
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			for (i in balls){
 				
-				if (FileSystem.exists(i + "/shared/images/"+char+".png")){
+				if (Util.exists(i + "/shared/images/"+char+".png")){
 					path = i + "/shared/images/"+char+".png";
 					break;
 				}
-				if (FileSystem.exists("mods/"+ i + "/shared/images/"+char+".png")){
+				if (Util.exists("mods/"+ i + "/shared/images/"+char+".png")){
 					path = "mods/" + i + "/shared/images/"+char+".png";
 					break;
 				}

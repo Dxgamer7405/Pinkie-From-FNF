@@ -7,9 +7,9 @@ import flixel.*;
  */
 class CutsceneState extends MusicBeatState
 {
-	var vido:String = "assets/videos/Twi End Cutscene.mp4";
+	var vido:String = "mods/introMod/_append/Twi End Cutscene.mp4";
 	var next:Void->Void;
-	public function new(vido:String = "assets/videos/Twi End Cutscene.mp4",next:Void->Void) 
+	public function new(vido:String = "mods/introMod/_append/Twi End Cutscene.mp4",next:Void->Void) 
 	{
 		super();
 		this.vido = vido;

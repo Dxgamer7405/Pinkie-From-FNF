@@ -474,7 +474,7 @@ class LuaSprite extends LuaClass {
     var sprite = PlayState.currentPState.luaSprites[spriteName];
     var fullPath = TitleState.curDir+"/data/" + PlayState.SONG.song.toLowerCase()+"/"+path+".png";
     var data:BitmapData;
-    if(FileSystem.exists(fullPath) && !FileSystem.isDirectory(fullPath)){
+    if(Util.exists(fullPath) && !FileSystem.isDirectory(fullPath)){
       try{
         data = BitmapData.fromFile(fullPath);
       }catch(e:Any){
@@ -500,10 +500,10 @@ class LuaSprite extends LuaClass {
     var fullPathPNG = fullPath + ".png";
     var bitmapData:BitmapData;
     var content:String;
-    if(FileSystem.exists(fullPathPNG) && !FileSystem.isDirectory(fullPathPNG) && FileSystem.exists(fullPathXML) && !FileSystem.isDirectory(fullPathXML) ){
+    if(Util.exists(fullPathPNG) && !FileSystem.isDirectory(fullPathPNG) && Util.exists(fullPathXML) && !FileSystem.isDirectory(fullPathXML) ){
       try{
         bitmapData = BitmapData.fromFile(fullPathPNG);
-        content = File.getContent(fullPathXML);
+        content = Util.getContent(fullPathXML);
       }catch(e:Any){
         LuaL.error(state,"FATAL ERROR: " + e);
         return 0;

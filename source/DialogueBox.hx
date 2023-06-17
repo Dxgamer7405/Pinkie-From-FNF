@@ -230,17 +230,6 @@ class DialogueBox extends FlxSpriteGroup
 		cutsceneImage.offset.x = FlxG.random.float( -bgShake, bgShake);
 		cutsceneImage.offset.y = FlxG.random.float( -bgShake, bgShake);
 		
-#if android
-var justTouched:Bool = false;
-
-for (touch in FlxG.touches.list)
-{
-        if (touch.justPressed)
-        {
-               justTouched = true;
-        }
-}
-#end
 		
 		if (bgShake > 0) bgShake-= 1;
 		if (textShake > 0) textShake-= 1;
@@ -269,13 +258,24 @@ for (touch in FlxG.touches.list)
 
 		}
 
+		#if mobile
+    var justTouched:Bool = false;
+		for (touch in FlxG.touches.list)
+		  {
+		  	if (touch.justPressed)
+			   {
+				   justTouched = true;
+			   }
+		   }
+		 #end
+
 		if (FlxG.keys.justPressed.SHIFT && !inAutoText && dialogueStarted == true && !canAdvance && !isEnding)
 		{
 			timeBeforeSkip.cancel();
 			canAdvance = true;
 			swagDialogue.skip();
 		}
-		if (FlxG.keys.justPressed.ENTER && dialogueStarted #if android || justTouched #end == true && canAdvance && !isEnding)
+		if (FlxG.keys.justPressed.ENTER #if mobile || justTouched #end && dialogueStarted == true && canAdvance && !isEnding)
 		{
 			if (wasHidden){
 				wasHidden = false;

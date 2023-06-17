@@ -71,7 +71,6 @@ class FlxVideo extends FlxBasic {
 		#end
 	}
 
-	#if desktop
 	function checkFile(fileName:String):String
 	{
 		var pDir = "";
@@ -133,5 +132,4 @@ class FlxVideo extends FlxBasic {
 			}
 		}
 	//#end
-	#end
 }

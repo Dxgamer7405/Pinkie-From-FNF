@@ -1312,7 +1312,7 @@ var UI_noteTex:FlxUIInputText;
 	function loadJson(song:String):Void
 	{
 		PlayState.SONG = Song.loadFromJson(song.toLowerCase(), song.toLowerCase());
-		if (FileSystem.exists(Paths.getPath('data/'+song.toLowerCase() + '/sliders',TEXT,null))){
+		if (Util.exists(Paths.getPath('data/'+song.toLowerCase() + '/sliders',TEXT,null))){
 			PlayState.SONG.sliderVelocities = Song.loadFromJson('sliders', song.toLowerCase()).sliderVelocities;
 			
 		}

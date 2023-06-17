@@ -1,9 +1,0 @@
-indices danceLeft 24 GF idle0/0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-indices danceRight 24 GF idle0/15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
-indices danceLeft-blood 24 GF idle cut/0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-indices danceRight-blood 24 GF idle cut/15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
-indices danceLeft-gut 24 GF idle gut/0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-indices danceRight-gut 24 GF idle gut/15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
-prefix cut 24 GF get cut
-prefix gut 24 GF idle getting gut
-prefix empty 24 GF empty

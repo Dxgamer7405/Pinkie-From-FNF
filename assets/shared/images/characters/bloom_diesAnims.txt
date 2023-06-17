@@ -1,9 +1,0 @@
-prefix firstDeath 3 ded000
-prefix deathLoop 0 ded0010
-prefix deathConfirm 0 ded0011
-prefix singRIGHT 0 ded0002
-prefix singRIGHT-miss 0 ded0002
-prefix singLEFT 0 ded0002
-prefix singLEFT-miss 0 ded0002
-flipx
-pixel

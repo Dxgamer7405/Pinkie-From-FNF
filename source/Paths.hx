@@ -33,13 +33,13 @@ class Paths
 		currentLevel = name.toLowerCase();
 	}
 
-	public static function getPath(file:String, type:AssetType, library:Null<String>)
+	public static function (file:String, type:AssetType, library:Null<String>)
 	{
 		if (TitleState.curDir != "assets")
 		{
 			var path = TitleState.curDir + "/" + file;
 			
-			if(OpenFlAssets.exists(path)){
+			if(Util.exists(path)){
 				return path;
 			}
 			
@@ -161,7 +161,7 @@ class Paths
 	{
 		var DASHIT = null;
 		if(TitleState.curDir != "assets"){
-			if(OpenFlAssets.exists(file)) {
+			if(Util.exists(file)) {
 				DASHIT = Sound.fromFile(file);
 			}
 		}
@@ -185,7 +185,7 @@ class Paths
 			file = BitmapData.fromFile(TitleState.curDir + "/images/" + key + ".png");
 		}
 		
-		//trace(TitleState.curDir + "/images/" + key, FileSystem.exists(TitleState.curDir + "/images/" + key+".png"));
+		//trace(TitleState.curDir + "/images/" + key, Util.exists(TitleState.curDir + "/images/" + key+".png"));
 		if(file != null) {
 			return file;
 		}
@@ -215,7 +215,7 @@ class Paths
 					var tits = "";
 					if(includePath)tits= i.replace('shared:','')  + "/shared/images/";
 						//trace(tits + key + ".png");
-					if (OpenFlAssets.exists(tits + key + ".png")){
+					if (Util.exists(tits + key + ".png")){
 						if(i == "assets")pulllfromAssets = true;
 						foundshit = true;
 						path = tits + key + ".png";
@@ -264,7 +264,7 @@ class Paths
 			var foundshit = false;
 			for (i in balls){
 				if (!foundshit){
-					if (OpenFlAssets.exists(key)){
+					if (Util.exists(key)){
 						if(i == "assets")pulllfromAssets = true;
 						foundshit = true;
 						path = key;
@@ -280,7 +280,7 @@ class Paths
 				var pl = preload?"":"shared:";
 				txt = OpenFlAssets.getText(pl+path);
 			}else{
-				txt = File.getContent(path);
+				txt = Util.getContent(path);
 			}
 		return txt;
 	}

@@ -320,8 +320,7 @@ class PlayState extends MusicBeatState
 			FlxG.sound.music.stop();
 
 		//lua = new LuaVM();
-			luaModchartExists = Assets.exists("assets/data/" + songData.chartName.toLowerCase() + "/modchart.lua");
-
+			luaModchartExists = Util.exists(Paths.modchart(SONG.song.toLowerCase()));
 		if (TitleState.curDir == 'assets'){
 			daInst = FlxG.sound.cache(Paths.inst(SONG.song.toLowerCase()));
 			//daVoices = //FlxG.sound.cache(Paths.voices(SONG.song.toLowerCase()));
@@ -331,7 +330,7 @@ class PlayState extends MusicBeatState
 			//daVoicesopenfl.media.Sound.fromFile(Paths.music('freakyMenu'));
 		}
 
-		if (Assets.exists(Paths.json(SONG.song.toLowerCase() + '/sliders'))){
+		if (Util.exists(Paths.json(SONG.song.toLowerCase() + '/sliders'))){
 			SONG.sliderVelocities = Song.loadFromJson('sliders', SONG.song.toLowerCase()).sliderVelocities;
 		}
 		grade = ScoreUtils.gradeArray[0] + " (FC)";
@@ -412,7 +411,7 @@ class PlayState extends MusicBeatState
 					
 					
 					
-					hasEndDialogue = OpenFlAssets.exists(Paths.txt(SONG.song.toLowerCase() + "/dialogueEnd" + (isPony?"-pony":"")));
+					hasEndDialogue = Util.exists(Paths.txt(SONG.song.toLowerCase() + "/dialogueEnd" + (isPony?"-pony":"")));
 					if (currentOptions.lessBS) hasEndDialogue = false;
 					trace(Paths.txt(SONG.song.toLowerCase() + "/dialogueEnd" + (isPony?"-pony":"")));
 				} catch(e){
@@ -1041,10 +1040,11 @@ class PlayState extends MusicBeatState
 		shitsTxt.cameras = [camHUD];
 		highComboTxt.cameras = [camHUD];
 		presetTxt.cameras = [camHUD];
-		#if android
-		addAndroidControls();
-		androidControls.visible = true;
+		#if mobile
+		addMobileControls(false);
+    mobileControls.visible = false;
 		#end
+
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
 		// UI_camera.zoom = 1;
@@ -1765,8 +1765,11 @@ class PlayState extends MusicBeatState
 	
 	function startCountdown():Void
 	{
-		inCutscene = false;
+    #if mobile
+    mobileControls.visible = true;
+    #end
 
+		inCutscene = false;
 		generateStaticArrows(0);
 		generateStaticArrows(1);
 
@@ -2123,7 +2126,7 @@ class PlayState extends MusicBeatState
 			var stopLookin = false;
 			for (i in balls){
 				if(!stopLookin){
-					if (OpenFlAssets.exists(i + "/shared/images/"+SONG.strumskin+".xml")){
+					if (Util.exists(i + "/shared/images/"+SONG.strumskin+".xml")){
 						path = i + "/shared/images/"+SONG.strumskin+".xml";
 						stopLookin = true;
 						break;
@@ -2135,7 +2138,7 @@ class PlayState extends MusicBeatState
 			
 			
 			
-				babyArrow.frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(SONG.strumskin), File.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
+				babyArrow.frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(SONG.strumskin), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
 
 				
 				
@@ -2466,7 +2469,7 @@ class PlayState extends MusicBeatState
 			health=0;
 		}
 		previousHealth=health;
-		if (FlxG.keys.justPressed.ENTER #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
+		if (FlxG.keys.justPressed.ENTER #if mobile || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			persistentUpdate = false;
 			persistentDraw = true;
@@ -2489,8 +2492,6 @@ class PlayState extends MusicBeatState
 
 		if (FlxG.keys.justPressed.SEVEN)
 		{
-
-
 			if(lua!=null){
 				lua.destroy();
 				trace("cringe");
@@ -3183,6 +3184,9 @@ class PlayState extends MusicBeatState
 	}
 	function endSong():Void
 	{
+    #if mobile
+    mobileControls.visible = false;
+    #end
 		endingSong = true;
 		TitleState.curDir = "assets";
 		canPause = false;
@@ -3318,7 +3322,7 @@ class PlayState extends MusicBeatState
 					trace(SONG.song.toLowerCase());
 					if (SONG.song.toLowerCase() == 'discord' ){
 						if(isPony){
-							FlxG.switchState(new CutsceneState("assets/videos/Twi End Cutscene.mp4", function(){
+							FlxG.switchState(new CutsceneState("mods/introMod/_append/Twi End Cutscene.mp4", function(){
 								FlxG.switchState(new CutsceneState("assets/videos/credits-pony.mp4", CutsceneState.end ));
 							}));
 						}else{

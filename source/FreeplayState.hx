@@ -189,10 +189,10 @@ class FreeplayState extends MusicBeatState
 
 		add(CoolUtil.addSprite(0, 649, "freeplaymenu/controls", 0));
 		
-    #if android
-  	addVirtualPad(LEFT_FULL, A_B);
+	  #if mobile
+    addVirtualPad(UP_DOWN, A_B_C);
     #end
-		
+
 		super.create();
 	}
 
@@ -253,7 +253,7 @@ class FreeplayState extends MusicBeatState
 		{
 			changeSelection(1);
 		}
-		if (FlxG.keys.justPressed.SHIFT)
+		if (FlxG.keys.justPressed.SHIFT #if mobile || virtualPad.buttonC.justPressed #end)
 		{
 			context = !context;
 				vinyl.animation.play('button');
@@ -313,7 +313,7 @@ class FreeplayState extends MusicBeatState
 			curDifficulty = 0;
 			
 		var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
-		if (!FileSystem.exists(TitleState.curDir+'/data/'+songs[curSelected].songName.toLowerCase()+'/'+poop+'.json')){
+		if (!Util.exists(TitleState.curDir+'/data/'+songs[curSelected].songName.toLowerCase()+'/'+poop+'.json')){
 			curDifficulty = 1;
 		}
 		#if !switch

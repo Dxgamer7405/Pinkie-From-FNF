@@ -26,7 +26,6 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
 import sys.io.File;
@@ -53,20 +52,19 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
-    #if android
-    FlxG.android.preventDefaultKeys = [BACK];
-    #end
-	  /*
-	directories = [];
+   #if android
+   FlxG.android.preventDefaultKeys = [BACK];
+   #end
+
+ 	 directories = [];
 	
-	for (i in FileSystem.readDirectory("mods")){
+	 for (i in Util.readDirectory("mods")){
 		
-		if (!i.contains(".") && i != "introMod"){
-			directories.push(i);
-			trace(i);
-		}
-	}
-*/
+		 if (!i.contains(".") && i != "introMod"){
+			 directories.push(i);
+			 trace(i);
+		 }
+	 }
 
 		OptionUtils.bindSave();
 		OptionUtils.loadOptions(OptionUtils.options);

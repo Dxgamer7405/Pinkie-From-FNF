@@ -35,7 +35,7 @@ class OutdatedSubState extends MusicBeatState
 		{
 			FlxG.openURL("https://ninja-muffin24.itch.io/funkin");
 		}
-		if (controls.BACK #if android || FlxG.android.justReleased.BACK #extends)
+		if (controls.BACK #if android || FlxG.android.justReleased.BACK #end)
 		{
 			leftState = true;
 			FlxG.switchState(new MainMenuState());
