@@ -551,14 +551,14 @@ class Character extends FlxSprite
 			/*if(Cache.xmlData[curCharacter]!=null){
 				xmlData=Cache.xmlData[curCharacter];
 			}else{
-				xmlData=Util.getContent("assets/shared/images/characters/"+curCharacter+".xml");
+				xmlData=Util.getContent("shared:assets/shared/images/characters/"+curCharacter+".xml");
 				Cache.xmlData[curCharacter]=xmlData;
 			}
 			var bitmapData:BitmapData;
 			if(FlxG.bitmap.get(curCharacter + "CharFrames")!=null){
 				bitmapData = FlxG.bitmap.get(curCharacter + "CharFrames").bitmap;
 			}else{
-				bitmapData = BitmapData.fromFile("assets/shared/images/characters/"+curCharacter+".png");
+				bitmapData = BitmapData.fromFile("shared:assets/shared/images/characters/"+curCharacter+".png");
 				FlxG.bitmap.add(bitmapData,true,curCharacter+"CharFrames");
 			}*/
 
@@ -723,7 +723,7 @@ class Character extends FlxSprite
 			if (Util.exists(TitleState.curDir + "shared:assets/shared/images/characters/" + curCharacter + "Offsets.txt")){
 				data = Util.getContent(TitleState.curDir + "shared:assets/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}else{
-				data = Util.getContent("assets/shared/images/characters/"+curCharacter+"Offsets.txt");
+				data = Util.getContent("shared:assets/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}
 			
 			offsets = CoolUtil.coolTextFile2(data);
@@ -749,7 +749,7 @@ class Character extends FlxSprite
 			if (Util.exists(TitleState.curDir + "shared:assets/shared/images/characters/" + curCharacter + "Anims.txt")){
 				data = Util.getContent(TitleState.curDir + "shared:assets/shared/images/characters/"+curCharacter+"Anims.txt");
 			}else{
-				data = Util.getContent("assets/shared/images/characters/"+curCharacter+"Anims.txt");
+				data = Util.getContent("shared:assets/shared/images/characters/"+curCharacter+"Anims.txt");
 			}
 				anims = CoolUtil.coolTextFile2(data);
 				Cache.animData[curCharacter] = data;
