@@ -9,6 +9,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import sys.io.File;
 import lime.utils.Assets;
 
+
 using StringTools;
 
 class Portrait extends FlxSprite
@@ -58,7 +59,7 @@ class Portrait extends FlxSprite
         
 				var filepath = "shared:assets/shared/images" + _character + "_portrait.txt";
 				
-				var rawdata:String = Assets.getTxt(filepath);
+				var rawdata:String = Util.getContent(filepath);
 				var data = rawdata.split("\n");
 				for (i in data){
 					var thing = i.split(":");
