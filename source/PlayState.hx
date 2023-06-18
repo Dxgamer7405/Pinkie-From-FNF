@@ -1349,14 +1349,8 @@ class PlayState extends MusicBeatState
 			for(i in [luaModchart,leftPlayerNote,downPlayerNote,upPlayerNote,rightPlayerNote,leftDadNote,downDadNote,upDadNote,rightDadNote,window,bfLua,gfLua,dadLua,bfIcon,dadIcon,luaGameCam,luaHUDCam])
 				i.Register(lua.state);
 
-			try {
-				lua.run(Util.getContet(Paths.modchart(SONG.song.toLowerCase())));
-			}catch (e:Exception){
-				trace("ERROR: " + e);
-			};
-			
-			
-			
+				lua.run(Util.getContent(Paths.modchart(SONG.song.toLowerCase())));
+
 			if(luaModchartExists && lua!=null){
 				lua.call("createPost",[]);
 			}
