@@ -723,7 +723,7 @@ class Character extends FlxSprite
 			if (Util.exists(TitleState.curDir + "/shared/images/characters/" + curCharacter + "Offsets.txt")){
 				data = Util.getContent(TitleState.curDir + "/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}else{
-				data = Util.getContent("shared:assets/shared/images/characters/"+curCharacter+"Offsets.txt");
+				data = Util.getContent("assets/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}
 			
 			
