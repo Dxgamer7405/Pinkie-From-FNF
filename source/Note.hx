@@ -98,7 +98,6 @@ class Note extends FlxSprite
 				updateHitbox();
 			default:
 			
-			var path = "";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			var stopLookin = false;
 			var daTex = PlayState.SONG.noteskin;
@@ -108,7 +107,6 @@ class Note extends FlxSprite
 			for (i in balls){
 				if (!stopLookin){
 					if (Util.exists(i + "shared:assets/shared/images/"+daTex+".xml")){
-						path = i + "shared:assets/shared/images/"+daTex+".xml";
 						stopLookin = true;
 						break;
 					}
@@ -182,15 +180,12 @@ class Note extends FlxSprite
 
 	public function getbmp(char:String):FlxGraphic{
 		if (!noteBitmaps.exists(char)){
-			var path = "";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			for (i in balls){
 				if (Util.exists(i + "shared:assets/shared/images/"+char+".png")){
-					path = i + "shared:assets/shared/images/"+char+".png";
 					break;
 				}
 				if (Util.exists("mods/"+ i + "shared:assets/shared/images/"+char+".png")){
-					path = "mods/" + i + "shared:assets/shared/images/"+char+".png";
 					break;
 				}
 			}
