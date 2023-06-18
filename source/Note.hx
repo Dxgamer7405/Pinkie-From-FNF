@@ -96,14 +96,9 @@ class Note extends FlxSprite
 
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 				updateHitbox();
-
 			default:
-				
-				
-				
-				
-				
-			var path = "shared:assets/shared/images/";
+			
+			var path = "";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			var stopLookin = false;
 			var daTex = PlayState.SONG.noteskin;
@@ -119,7 +114,6 @@ class Note extends FlxSprite
 					}
 				}
 			}
-			trace(daTex+":shared:assets/shared/images/"+path);
 				frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(daTex), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
 
 				animation.addByPrefix('greenScroll', 'green0');
@@ -143,10 +137,8 @@ class Note extends FlxSprite
 		}
 
 		var colors = ["purple","blue","green","red"];
-
 		x += swagWidth * noteData;
 		animation.play('${colors[noteData]}Scroll');
-
 		// trace(prevNote);
 
 		if (isSustainNote && prevNote != null)
@@ -154,7 +146,6 @@ class Note extends FlxSprite
 			prevNote.holdParent=true;
 			noteScore * 0.2;
 			alpha = 0.6;
-
 			//var off = -width;
 			var off = -width/4;
 			//x+=width/2;
@@ -172,12 +163,8 @@ class Note extends FlxSprite
 			if (PlayState.curStage.startsWith('school'))
 				off -= 36.5;
 			else
-				off -= 2;
-
-
-
+			off -= 2;
 			offset.x = off;
-
 			if (prevNote.isSustainNote)
 			{
 				endHold = false;
@@ -193,17 +180,11 @@ class Note extends FlxSprite
 		}
 	}
 
-	
-	
-	
 	public function getbmp(char:String):FlxGraphic{
-		
 		if (!noteBitmaps.exists(char)){
-			
 			var path = "";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			for (i in balls){
-				
 				if (Util.exists(i + "shared:assets/shared/images/"+char+".png")){
 					path = i + "shared:assets/shared/images/"+char+".png";
 					break;
@@ -219,14 +200,8 @@ class Note extends FlxSprite
 			gra.persist = true;
 			noteBitmaps.set(char, gra);
 		}
-		
-		
 		return noteBitmaps.get(char);
 	}
-	
-	
-	
-	
 	
 	override function update(elapsed:Float)
 	{
@@ -247,10 +222,6 @@ class Note extends FlxSprite
 				else
 					canBeHit = false;
 			}
-
-
-
-
 			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset && !wasGoodHit)
 				tooLate = true;
 		}
@@ -259,7 +230,6 @@ class Note extends FlxSprite
 			if (strumTime <= Conductor.songPosition)
 				canBeHit = true;
 		}
-
 		if (tooLate)
 		{
 			if (alpha > 0.3)
