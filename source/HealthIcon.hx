@@ -4,7 +4,6 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import openfl.display.BitmapData;
 import sys.FileSystem;
-import lime.utils.Assets;
 
 class HealthIcon extends FlxSprite
 {
@@ -18,9 +17,9 @@ class HealthIcon extends FlxSprite
 		
 		antialiasing = true;
 		if (TitleState.curDir != "assets"){
-			trace(char, TitleState.curDir + 'assets/images/icon-' + char + '.png');
+			trace(char, TitleState.curDir + '/images/icon-' + char + '.png');
 			
-			if(Util.exists(TitleState.curDir+'assets/images/icon-'+char+'.png')){
+			if(Util.exists(TitleState.curDir+'/images/icon-'+char+'.png')){
 			
 			loadGraphic(BitmapData.fromFile(TitleState.curDir+'/images/icon-'+char+'.png'), true, 150, 150);
 			animation.add(char, [0, 1], 0, false);

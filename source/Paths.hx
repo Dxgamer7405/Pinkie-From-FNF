@@ -184,14 +184,11 @@ class Paths
 		if (TitleState.curDir != 'assets'){
 			file = BitmapData.fromFile(TitleState.curDir + "/images/" + key + ".png");
 		}
-		
-		//trace(TitleState.curDir + "/images/" + key, Util.exists(TitleState.curDir + "/images/" + key+".png"));
+
 		if(file != null) {
 			return file;
 		}
 		
-		
-		//trace(key);
 		return getPath('images/$key.png', IMAGE, library);
 	}
 
@@ -214,24 +211,16 @@ class Paths
 				if (!foundshit){
 					var tits = "";
 					if(includePath)tits= i.replace('shared:','')  + "/shared/images/";
-						//trace(tits + key + ".png");
-					if (Util.exists(tits + key + ".png")){
 						if(i == "assets")pulllfromAssets = true;
 						foundshit = true;
 						path = tits + key + ".png";
 						trace(path);
-					}
 				}
 			}
 			var gra:FlxGraphic;
 			var bmp:BitmapData;
 			
-						//YOU ARE CACHING TO GPU
-			if (pulllfromAssets){
-				bmp = OpenFlAssets.getBitmapData("shared:" + path,false);
-			}else{
-				bmp = BitmapData.fromFile(path);
-			}
+			bmp = OpenFlAssets.getBitmapData("shared:" + path,false);
 			gra = FlxGraphic.fromBitmapData(bmp, false, key,false);
 			gra.persist = true;
 			imgCache.set(key, gra);
@@ -264,24 +253,18 @@ class Paths
 			var foundshit = false;
 			for (i in balls){
 				if (!foundshit){
-					if (Util.exists(key)){
 						if(i == "assets")pulllfromAssets = true;
 						foundshit = true;
 						path = key;
 						trace(path);
-					}
 				}
 			}
 			
 						trace(TitleState.curDir);
 						trace(pulllfromAssets);
 						var txt:String = '';
-			if (pulllfromAssets){
 				var pl = preload?"":"shared:";
 				txt = OpenFlAssets.getText(pl+path);
-			}else{
-				txt = Util.getContent(path);
-			}
 		return txt;
 	}
 	inline static public function getSparrowAtlas(key:String, ?library:String)
