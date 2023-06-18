@@ -2135,6 +2135,8 @@ class PlayState extends MusicBeatState
 				}
 			}
 
+          babyArrow.frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(SONG.strumskin), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
+
 					babyArrow.antialiasing = true;
 					babyArrow.setGraphicSize(Std.int(babyArrow.width * SONG.notescale));
 
