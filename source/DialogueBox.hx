@@ -269,13 +269,13 @@ class DialogueBox extends FlxSpriteGroup
 		   }
 		 #end
 
-		if (FlxG.keys.justPressed.SHIFT #if mobile || justTouched #end && !inAutoText && dialogueStarted == true && !canAdvance && !isEnding)
+		if (FlxG.keys.justPressed.SHIFT && !inAutoText && dialogueStarted == true && !canAdvance && !isEnding)
 		{
 			timeBeforeSkip.cancel();
 			canAdvance = true;
 			swagDialogue.skip();
 		}
-		if (FlxG.keys.justPressed.ENTER && dialogueStarted == true && canAdvance && !isEnding)
+		if (FlxG.keys.justPressed.ENTER #if mobile || justTouched #end && dialogueStarted == true && canAdvance && !isEnding)
 		{
 			if (wasHidden){
 				wasHidden = false;
