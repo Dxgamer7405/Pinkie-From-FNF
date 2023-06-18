@@ -98,6 +98,7 @@ class Note extends FlxSprite
 				updateHitbox();
 			default:
 			
+			var path = "";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			var stopLookin = false;
 			var daTex = PlayState.SONG.noteskin;
