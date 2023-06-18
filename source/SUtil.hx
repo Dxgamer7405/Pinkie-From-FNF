@@ -20,6 +20,8 @@ import sys.io.File;
 
 using StringTools;
 
+// APENAS PRO O CRASH HANDLER NÃO ME BATE IDKLOOL
+
 enum StorageType
 {
 	DATA;

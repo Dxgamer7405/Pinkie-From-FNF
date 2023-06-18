@@ -61,6 +61,10 @@
 		"type":"haxelib"
 		},
 		{
+		"name":"hxcpp-debug-server",
+		"type":"haxelib"
+		},
+		{
 		"name":"linc_luajit",
 		"type":"git",
 		"ref":"master",
