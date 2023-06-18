@@ -4,7 +4,6 @@ import flixel.FlxGame;
 import flixel.FlxState;
 import openfl.Assets;
 import openfl.Lib;
-import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
 
@@ -79,16 +78,9 @@ class Main extends Sprite
 
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
-		addChild(new FPS(10, 3, 0xFFFFFF));
-
 		#if CRASH_HANDLER
 		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
 		#end
-	}
-
-	public function setFPSCap(cap:Float)
-	{
-		openfl.Lib.current.stage.frameRate = cap;
 	}
 
 	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!
@@ -104,7 +96,7 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = "./crash/" + "VsRetro_" + dateNow + ".txt";
+		path = "./crash/" + "VsPinkie_" + dateNow + ".txt";
 
 		for (stackItem in callStack)
 		{
@@ -126,9 +118,4 @@ class Main extends Sprite
 		Sys.exit(1);
 	}
 	#end
-
-	public function getFPSCap():Float
-	{
-		return openfl.Lib.current.stage.frameRate;
-	}
 }
