@@ -2127,11 +2127,9 @@ class PlayState extends MusicBeatState
 			var stopLookin = false;
 			for (i in balls){
 				if(!stopLookin){
-					if (Util.exists(i + "assets/shared/images/"+SONG.strumskin+".xml")){
-						path = i + "assets/shared/images/"+SONG.strumskin+".xml";
+						path = "shared:" + i + "/shared/images/"+SONG.strumskin+".xml";
 						stopLookin = true;
 						break;
-					}
 				}
 			}
 
