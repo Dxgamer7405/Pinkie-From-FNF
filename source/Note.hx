@@ -113,7 +113,7 @@ class Note extends FlxSprite
 					}
 				}
 			}
-				frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(daTex), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
+				//frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(daTex), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
 
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');
