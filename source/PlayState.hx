@@ -60,6 +60,7 @@ import llua.Lua;
 import llua.State;
 import llua.LuaL;
 import sys.io.File;
+import lime.utils.Assets;
 import animateatlas.AtlasFrameMaker;
 
 using StringTools;
@@ -483,29 +484,29 @@ class PlayState extends MusicBeatState
 		                  curStage = 'ponyville';
 		                  defaultCamZoom = 0.9;
 		                  
-						 SKY = addSprite( -364.05, -376, "pinkie/skyy", 0);
-						  addSprite( -169.5, -130, "pinkie/clouds", 0.1);
-						  lighting = addSprite( 62.95, -809, "pinkie/lightning", 1);
+						 SKY = addSprite( -364.05, -376, "shared:assets/shared/images/pinkie/skyy", 0);
+						  addSprite( -169.5, -130, "shared:assets/shared/images/pinkie/clouds", 0.1);
+						  lighting = addSprite( 62.95, -809, "shared:assets/shared/images/pinkie/lightning", 1);
 				lighting.alpha = 0;
-				cloudo1 = addAnimPrefix( 355.3, 89.5, "pinkie/discord/cottoncloud1","cottoncloud1",0.2);
-				cloudo2 = addAnimPrefix( 894.65, -38.05, "pinkie/discord/cottoncloud2","cottoncloud2",0.6);
-				cloudo3 = addAnimPrefix( -148.6, -103.5, "pinkie/discord/cottoncloud3", "cottoncloud3", 0.7);
+				cloudo1 = addAnimPrefix( 355.3, 89.5, "shared:assets/shared/images/pinkie/discord/cottoncloud1","cottoncloud1",0.2);
+				cloudo2 = addAnimPrefix( 894.65, -38.05, "shared:assets/shared/images/pinkie/discord/cottoncloud2","cottoncloud2",0.6);
+				cloudo3 = addAnimPrefix( -148.6, -103.5, "shared:assets/shared/images/pinkie/discord/cottoncloud3", "cottoncloud3", 0.7);
 				cloudo1.alpha = 0;
 				cloudo2.alpha = 0;
 				cloudo3.alpha = 0;
-						  addSprite( 143.4, -291, "pinkie/backhouses", 0.5);
-						  addSprite( -646, -502, "pinkie/house2", 0.7);
-						  addSprite( 455.8, -526, "pinkie/house", 0.9);
-						  addSprite( -488.2, 438, "pinkie/floor", 0.9);
+						  addSprite( 143.4, -291, "shared:assets/shared/images/pinkie/backhouses", 0.5);
+						  addSprite( -646, -502, "shared:assets/shared/images/pinkie/house2", 0.7);
+						  addSprite( 455.8, -526, "shared:assets/shared/images/pinkie/house", 0.9);
+						  addSprite( -488.2, 438, "shared:assets/shared/images/pinkie/floor", 0.9);
 						  
 						  
-		                  var sh:FlxSprite = new FlxSprite(168.05, 556.1).loadGraphic(Paths.image('pinkie/shadow'));
+		                  var sh:FlxSprite = new FlxSprite(168.05, 556.1).loadGraphic(Paths.image('shared:assets/shared/images/pinkie/shadow'));
 		                  sh.antialiasing = true;
 		                  sh.active = false;
 						  add(sh);
 						  
 		                  ponybg = new FlxSprite( -80, 157.05);
-						  ponybg.frames = Paths.getSparrowAtlas('pinkie/ponybg');
+						  ponybg.frames = Paths.getSparrowAtlas('shared:assets/shared/images/pinkie/ponybg');
 		                  ponybg.antialiasing = true;
 		                  ponybg.scrollFactor.set(0.9,0.9);
 						  ponybg.animation.addByPrefix("porche", "ponybg_porche", 0, false );
@@ -519,21 +520,21 @@ class PlayState extends MusicBeatState
 		                  curStage = 'hd';
 		                  defaultCamZoom = 0.95;
 						  //defaultHudZoom = 0.8;
-						  addSprite( -54, -172, "pinkie/hd/sky",0);
-						  addSprite( -49, -48, "pinkie/hd/mountains",0.2);
-						  addSprite( -266.25, -79.45, "pinkie/hd/bg2",0.5);
-						  hd_tree = addSprite( -266.25, -79.45, "pinkie/hd/bg",0.5);
-						  addSprite( 477.1, 178.35, "pinkie/hd/ponies",0.5);
-						  addSprite( -385.8, 279.3, "pinkie/hd/grass", 1);
+						  addSprite( -54, -172, "shared:assets/shared/images/pinkie/hd/sky",0);
+						  addSprite( -49, -48, "shared:assets/shared/images/pinkie/hd/mountains",0.2);
+						  addSprite( -266.25, -79.45, "shared:assets/shared/images/pinkie/hd/bg2",0.5);
+						  hd_tree = addSprite( -266.25, -79.45, "shared:assets/shared/images/pinkie/hd/bg",0.5);
+						  addSprite( 477.1, 178.35, "shared:assets/shared/images/pinkie/hd/ponies",0.5);
+						  addSprite( -385.8, 279.3, "shared:assets/shared/images/pinkie/hd/grass", 1);
 						  
 						  
-		                  var sh:FlxSprite = new FlxSprite(168.05, 556.1).loadGraphic(Paths.image('pinkie/shadow'));
+		                  var sh:FlxSprite = new FlxSprite(168.05, 556.1).loadGraphic(Paths.image('shared:assets/shared/images/pinkie/shadow'));
 		                  sh.antialiasing = true;
 		                  sh.active = false;
 						  add(sh);
 						  
 		                  hd_dash = new FlxSprite( 1487, -55);
-						  hd_dash.frames = Paths.getSparrowAtlas('pinkie/hd/dash');
+						  hd_dash.frames = Paths.getSparrowAtlas('shared:assets/shared/images/pinkie/hd/dash');
 		                  hd_dash.antialiasing = true;
 						  hd_dash.animation.addByIndices("dashing", "rainbow dash", [0], '',24,false );
 						  hd_dash.animation.addByIndices("ouch", "rainbow dash", [1], '',24,false );
@@ -543,7 +544,7 @@ class PlayState extends MusicBeatState
 						  hd_dash.visible = false;
 						  
 		                  treeexplode = new FlxSprite( 644.4, 51);
-						  treeexplode.frames = Paths.getSparrowAtlas('pinkie/hd/treeexplode');
+						  treeexplode.frames = Paths.getSparrowAtlas('shared:assets/shared/images/pinkie/hd/treeexplode');
 		                  treeexplode.antialiasing = true;
 						  treeexplode.animation.addByPrefix("boom", "treeexplode",24,false);
 						  treeexplode.animation.play("boom");
@@ -562,52 +563,52 @@ class PlayState extends MusicBeatState
 		                  defaultCamZoom = 0.7;
 						  
 		                 // bgColor = 0xFFA2E9AD;
-				addSprite( -908.45, -125.35, "pinkie/discord/hills",0.2);
-				addSprite( -378.85, -879.85, "pinkie/discord/bigcloud",0.25);
+				addSprite( -908.45, -125.35, "shared:assets/shared/images/pinkie/discord/hills",0.2);
+				addSprite( -378.85, -879.85, "shared:assets/shared/images/pinkie/discord/bigcloud",0.25);
 				
 				
-				setSpr('disc_end',addSprite( 0, 0, "characters/discord_end",1));
-				setSpr('disc_die',addSprite( 0, 0, "characters/discord_die",1));
+				setSpr('disc_end',addSprite( 0, 0, "shared:assets/shared/images/characters/discord_end",1));
+				setSpr('disc_die',addSprite( 0, 0, "shared:assets/shared/images/characters/discord_die",1));
 				getSpr('disc_end').alpha = 0.001;
 				getSpr('disc_die').alpha = 0.001;
 				
 				
 				
-				floatShits.push(addSprite( 1046.55, 43.95, "pinkie/discord/floathouse2",0.3));
-				floatShits.push(addSprite( 1198.5, 105.9, "pinkie/discord/groundpiece",0.35));
-				floatShits.push(addSprite( 210.8, -96.65, "pinkie/discord/tree",0.2));
+				floatShits.push(addSprite( 1046.55, 43.95, "shared:assets/shared/images/pinkie/discord/floathouse2",0.3));
+				floatShits.push(addSprite( 1198.5, 105.9, "shared:assets/shared/images/pinkie/discord/groundpiece",0.35));
+				floatShits.push(addSprite( 210.8, -96.65, "shared:assets/shared/images/pinkie/discord/tree",0.2));
 				
-				addAnimPrefix( 355.3, 89.5, "pinkie/discord/cottoncloud1","cottoncloud1",0.2);
+				addAnimPrefix( 355.3, 89.5, "shared:assets/shared/images/pinkie/discord/cottoncloud1","cottoncloud1",0.2);
 				
-				floatShits.push(addSprite( 575.2, -210.15, "pinkie/discord/floathouse",0.4));
-				floatShits.push(addSprite( 1106.15, -553.45, "pinkie/discord/citthall",0.5));
+				floatShits.push(addSprite( 575.2, -210.15, "shared:assets/shared/images/pinkie/discord/floathouse",0.4));
+				floatShits.push(addSprite( 1106.15, -553.45, "shared:assets/shared/images/pinkie/discord/citthall",0.5));
 				
-				addAnimPrefix( 894.65, -38.05, "pinkie/discord/cottoncloud2","cottoncloud2",0.6);
-				addAnimPrefix( -148.6, -103.5, "pinkie/discord/cottoncloud3","cottoncloud3",0.7);
+				addAnimPrefix( 894.65, -38.05, "shared:assets/shared/images/pinkie/discord/cottoncloud2","cottoncloud2",0.6);
+				addAnimPrefix( -148.6, -103.5, "shared:assets/shared/images/pinkie/discord/cottoncloud3","cottoncloud3",0.7);
 				
-				addSprite( -447.8, 355.05, "pinkie/discord/discordground", 1);
-				
-				
+				addSprite( -447.8, 355.05, "shared:assets/shared/images/pinkie/discord/discordground", 1);
 				
 				
-						  setSpr('aj',addAnimPrefix( 1514.75, 53.55, "pinkie/discord/applejack", 'aj_end',1,false,0));
-						  setSpr('pinkie',addAnimPrefix( 1809.9, 4.95, "pinkie/discord/pinkie", 'pinkie_end',1,false,0));
+				
+				
+						  setSpr('aj',addAnimPrefix( 1514.75, 53.55, "shared:assets/shared/images/pinkie/discord/applejack", 'aj_end',1,false,0));
+						  setSpr('pinkie',addAnimPrefix( 1809.9, 4.95, "shared:assets/shared/images/pinkie/discord/pinkie", 'pinkie_end',1,false,0));
 						  
 						//  var bitchtwi:FlxSprite = new FlxSprite(2030.9, -148);
-						// bitchtwi.frames = AtlasFrameMaker.construct('assets/shared/images/pinkie/discord/twilight');
+						// bitchtwi.frames = AtlasFrameMaker.construct('assets/shared/images/shared:assets/shared/images/pinkie/discord/twilight');
 						//  bitchtwi.animation.addByPrefix('twi_end','twi_end',24,false);
 						  
 						  
-						  setSpr('twi', addAnimPrefix(2030.9, -148, "pinkie/discord/twi", 'twi_end', 1, false, 24));
+						  setSpr('twi', addAnimPrefix(2030.9, -148, "shared:assets/shared/images/pinkie/discord/twi", 'twi_end', 1, false, 24));
 						  getSpr('twi').animation.addByIndices('twiFloat', 'twi_end', Character.numArr(119, 129), '', 24);
 						  
 				
 						//}
-						  setSpr('rainbowsss', addAnimPrefix(0, 0, "pinkie/discord/rainbowsss", 'rainbowsss', 0, true, 24));
+						  setSpr('rainbowsss', addAnimPrefix(0, 0, "shared:assets/shared/images/pinkie/discord/rainbowsss", 'rainbowsss', 0, true, 24));
 						  getSpr('rainbowsss').visible = false;
 						  getSpr('rainbowsss').scale.set(1.5,1.5);
 					  
-				setSpr('disc_hey',addAnimPrefix( -661.55,-1199.25, "characters/DISCORDSPRITES/hey","discord_hey",1,false));
+				setSpr('disc_hey',addAnimPrefix( -661.55,-1199.25, "shared:assets/shared/images/characters/DISCORDSPRITES/hey","discord_hey",1,false));
 					getSpr('disc_hey').alpha = 0.001;
 		          default:
 		          {
@@ -758,7 +759,7 @@ class PlayState extends MusicBeatState
 				
 				
 				
-				var scoot:FlxSprite = addAnimPrefix(1799.15, 270, 'pinkie/scootaloo','scootaloo', 1);
+				var scoot:FlxSprite = addAnimPrefix(1799.15, 270, 'shared:assets/shared/images/pinkie/scootaloo','scootaloo', 1);
 				setSpr('scoot', scoot);
 				
 				
@@ -766,22 +767,22 @@ class PlayState extends MusicBeatState
 				
 				
 				
-						  setSpr('pony1', addAnimPrefix( 4000, 235, "poners/lyra", 'pony', 1));
+						  setSpr('pony1', addAnimPrefix( 4000, 235, "shared:assets/shared/images/poners/lyra", 'pony', 1));
 						  getSpr('pony1').scale.set(1.2,1.2);
 						  
-						  setSpr('pony2', addAnimPrefix( -6000, 245, "poners/bonbon", 'bonbon', 1.1));
+						  setSpr('pony2', addAnimPrefix( -6000, 245, "shared:assets/shared/images/poners/bonbon", 'bonbon', 1.1));
 						  getSpr('pony2').scale.set(1.4,1.4);
 						  getSpr('pony2').flipX = true;
 						  
 						  
-						  setSpr('pony3',addAnimPrefix( -8000, 255, "poners/minuette",'pony', 1.2));
+						  setSpr('pony3',addAnimPrefix( -8000, 255, "shared:assets/shared/images/poners/minuette",'pony', 1.2));
 						  getSpr('pony3').scale.set(1.6,1.6);
 						  getSpr('pony3').flipX = true;
 						  
-						  setSpr('pony4',addAnimPrefix( 14000, 245, "poners/vinyl",'pony', 1.2));
+						  setSpr('pony4',addAnimPrefix( 14000, 245, "shared:assets/shared/images/poners/vinyl",'pony', 1.2));
 						  getSpr('pony4').scale.set(1.4,1.4);
 						  
-						  setSpr('pony5',addAnimPrefix( -10000, 235, "poners/octavia",'pony', 1.2));
+						  setSpr('pony5',addAnimPrefix( -10000, 235, "shared:assets/shared/images/poners/octavia",'pony', 1.2));
 						  getSpr('pony5').scale.set(1.2,1.2);
 						  getSpr('pony5').flipX = true;
 						  
@@ -809,15 +810,15 @@ class PlayState extends MusicBeatState
 				boyfriend.setPosition(880,234);
 				gf.setPosition(9999, 9999);
 				
-				setSpr('dashCam', addAnimPrefix(1279, -48, 'pinkie/hd/dashcam', 'dashcam', 0, false));
+				setSpr('dashCam', addAnimPrefix(1279, -48, 'shared:assets/shared/images/pinkie/hd/dashcam', 'dashcam', 0, false));
 				getSpr('dashCam').visible = true;
 				getSpr('dashCam').cameras = [camHUD];
 				
-				setSpr('killometer', addAnimPrefix(474.3, 720, 'pinkie/hd/kill-o-meter', 'kill-o-meter', 0, false));
+				setSpr('killometer', addAnimPrefix(474.3, 720, 'shared:assets/shared/images/pinkie/hd/kill-o-meter', 'kill-o-meter', 0, false));
 				getSpr('killometer').cameras = [camOther];
 				
 				
-				setSpr('pinkieGlow', addAnimPrefix(117.75, 50.1, 'pinkie/hd/PINKIEGLOW', 'PINKIEGLOW', 1, true));
+				setSpr('pinkieGlow', addAnimPrefix(117.75, 50.1, 'shared:assets/shared/images/pinkie/hd/PINKIEGLOW', 'PINKIEGLOW', 1, true));
 				getSpr('pinkieGlow').visible = false;
 				getSpr('pinkieGlow').blend = 'add';
 				
@@ -831,9 +832,9 @@ class PlayState extends MusicBeatState
 				gf.angle = 20;
 				gf.scrollFactor.set(0.4, 0.4);
 				floatShits.push(gf);
-						  setSpr('flutter', addAnimPrefix( 2536.8, 60.8, "pinkie/discord/fluttershy", 'flutter_end', 1, false, 0));
-						  setSpr('rarity', addAnimPrefix( 2168.85, 310.45, "pinkie/discord/rarity", 'rarity_end', 1, false, 0));
-						  setSpr('dash', addAnimPrefix( 1428.5, 332.75, "pinkie/discord/dash", 'dash_end', 1, false, 0));
+						  setSpr('flutter', addAnimPrefix( 2536.8, 60.8, "shared:assets/shared/images/pinkie/discord/fluttershy", 'flutter_end', 1, false, 0));
+						  setSpr('rarity', addAnimPrefix( 2168.85, 310.45, "shared:assets/shared/images/pinkie/discord/rarity", 'rarity_end', 1, false, 0));
+						  setSpr('dash', addAnimPrefix( 1428.5, 332.75, "shared:assets/shared/images/pinkie/discord/dash", 'dash_end', 1, false, 0));
 				
 						  
 						  getSpr('pinkie').alpha = 0.0001;
@@ -845,7 +846,7 @@ class PlayState extends MusicBeatState
 						  getSpr('dash').alpha = 0.0001;
 						  
 						  
-						  setSpr('screwball', addAnimPrefix( 1280, -13, "pinkie/discord/screwball", 'screwball', 1));
+						  setSpr('screwball', addAnimPrefix( 1280, -13, "shared:assets/shared/images/pinkie/discord/screwball", 'screwball', 1));
 						  getSpr('screwball').cameras = [camOther];
 						 
 				remove(gf, true);
@@ -2127,7 +2128,7 @@ class PlayState extends MusicBeatState
 			var stopLookin = false;
 			for (i in balls){
 				if(!stopLookin){
-					if (Util.exists(i + "/shared/images/"+SONG.strumskin+".xml")){
+					if (Util.exists(i + "shared:assets/shared/images/"+SONG.strumskin+".xml")){
 						path = i + "/shared/images/"+SONG.strumskin+".xml";
 						stopLookin = true;
 						break;
@@ -3226,10 +3227,10 @@ class PlayState extends MusicBeatState
 								FlxTween.tween(camHUD, {alpha: 0}, 0.4);
 							trace(Conductor.songPosition);
 						camFollow.x = dad.getMidpoint().x ;
-				cloudo4 = addAnimPrefix( 300, -203.5, "pinkie/discord/cottoncloud3", "cottoncloud3", 1);
+				cloudo4 = addAnimPrefix( 300, -203.5, "shared:assets/shared/images/pinkie/discord/cottoncloud3", "cottoncloud3", 1);
 				cloudo4.alpha = 0;
 				
-				var discord = addAnimPrefix( -22.95, -809, "pinkie/discordEnter", "discordEnter", 1,false);
+				var discord = addAnimPrefix( -22.95, -809, "shared:assets/shared/images/pinkie/discordEnter", "discordEnter", 1,false);
 				discord.visible = false;
 							dad.playAnim('lookback');
 								FlxTween.tween(cloudo1, {alpha: 1}, 1);
