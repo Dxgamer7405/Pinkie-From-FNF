@@ -58,7 +58,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = Util.getContent("assets/shared/images/characters/gfPonyOffsets.txt");
+			var data = Util.getContent("characters/gfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);
