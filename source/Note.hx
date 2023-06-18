@@ -112,8 +112,8 @@ class Note extends FlxSprite
 			}
 			for (i in balls){
 				if (!stopLookin){
-					if (Util.exists(i + "/shared:assets/shared/images/"+daTex+".xml")){
-						path = i + "/shared:assets/shared/images/"+daTex+".xml";
+					if (Util.exists(i + "shared:assets/shared/images/"+daTex+".xml")){
+						path = i + "shared:assets/shared/images/"+daTex+".xml";
 						stopLookin = true;
 						break;
 					}
