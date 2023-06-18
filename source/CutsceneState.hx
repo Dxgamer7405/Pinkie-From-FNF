@@ -9,9 +9,9 @@ import hxcodec.flixel.FlxVideo;
  */
 class CutsceneState extends MusicBeatState
 {
-	var video:String = "mods/introMod/_append/Twi End Cutscene.mp4";
+	var video:String = "assets/videos/Twi End Cutscene.mp4";
 	var next:Void->Void;
-	public function new(video:String = "mods/introMod/_append/Twi End Cutscene.mp4",next:Void->Void) 
+	public function new(video:String = "assets/videos/Twi End Cutscene.mp4",next:Void->Void) 
 	{
 		super();
 		this.video = video;
