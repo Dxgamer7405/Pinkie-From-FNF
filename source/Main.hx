@@ -4,18 +4,9 @@ import flixel.FlxGame;
 import flixel.FlxState;
 import openfl.Assets;
 import openfl.Lib;
+import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
-
-#if CRASH_HANDLER
-import lime.app.Application;
-import openfl.events.UncaughtErrorEvent;
-import haxe.CallStack;
-import haxe.io.Path;
-import sys.FileSystem;
-import sys.io.File;
-import sys.io.Process;
-#end
 
 class Main extends Sprite
 {
@@ -37,6 +28,10 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
+    
+    // Crash Handler by MAJigsaw
+		SUtil.uncaughtErrorHandler();
+		SUtil.checkFiles();
 
 		if (stage != null)
 		{
@@ -78,44 +73,15 @@ class Main extends Sprite
 
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
-		#if CRASH_HANDLER
-		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
-		#end
+		addChild(new FPS(10, 3, 0xFFFFFF));
 	}
 
-	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!
-	// very cool person for real they don't get enough credit for their work
-	#if CRASH_HANDLER
-	function onCrash(e:UncaughtErrorEvent):Void
+	public function setFPSCap(cap:Float)
 	{
-		var errMsg:String = "";
-		var path:String;
-		var callStack:Array<StackItem> = CallStack.exceptionStack(true);
-		var dateNow:String = Date.now().toString();
-
-		dateNow = dateNow.replace(" ", "_");
-		dateNow = dateNow.replace(":", "'");
-
-		path = "./crash/" + "VsPinkie_" + dateNow + ".txt";
-
-		for (stackItem in callStack)
-		{
-			switch (stackItem)
-			{
-				case FilePos(s, file, line, column):
-					errMsg += file + " (line " + line + ")\n";
-				default:
-					Sys.println(stackItem);
-			}
-		}
-
-		errMsg += "\nUncaught Error: " + e.error + "\nPlease report this error to: https://github.com/Dxgamer7405/Pinkie-From-FNF\n\n> Crash Handler written by: sqirra-rng";
-
-		Sys.println(errMsg);
-		Sys.println("Crash dump saved in " + Path.normalize(path));
-
-		Application.current.window.alert(errMsg, "Error!");
-		Sys.exit(1);
+		openfl.Lib.current.stage.frameRate = cap;
 	}
-	#end
-}
+
+	public function getFPSCap():Float
+	{
+		return openfl.Lib.current.stage.frameRate;
+	}
