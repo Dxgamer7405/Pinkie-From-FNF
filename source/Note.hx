@@ -180,6 +180,7 @@ class Note extends FlxSprite
 
 	public function getbmp(char:String):FlxGraphic{
 		if (!noteBitmaps.exists(char)){
+			var path = "";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			for (i in balls){
 				if (Util.exists(i + "shared:assets/shared/images/"+char+".png")){
