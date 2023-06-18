@@ -116,7 +116,7 @@ class Options
 
 	// gameplay
 	public var controls:Array<FlxKey> = [FlxKey.A,FlxKey.S,FlxKey.K,FlxKey.L,FlxKey.R];
-	public var ghosttapping:Bool = false;
+	public var ghosttapping:Bool = true;
 	public var failForMissing:Bool = false;
 	public var newInput:Bool = true;
 	public var ratingWindow:Int = 0;
@@ -131,9 +131,9 @@ class Options
 	public var downScroll:Bool = false;
 	public var middleScroll:Bool = false;
 	public var menuFlash:Bool = true;
-	public var picoShaders:Bool = true;
+	public var picoShaders:Bool = false;
 	public var picoCamshake:Bool = true;
-	public var senpaiShaders:Bool = true;
+	public var senpaiShaders:Bool = false;
 	public var freeplayPreview:Bool = true;
 	public var hitSound:Bool = false;
 	public var lessBS:Bool = false;
