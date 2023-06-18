@@ -57,7 +57,7 @@ class Portrait extends FlxSprite
               //  addAnim("default", "noChar instance 1");
 				frames = Paths.getSparrowAtlas("portrait/" + _character, "shared");
         
-				var filepath = "shared:assets/shared/images/portrait/" + _character + "_portrait.txt";
+				var filepath = "shared:assets/shared/images/" + _character + "_portrait.txt";
 				
 				var rawdata:String = Util.getContent(filepath);
 				var data = rawdata.split("\n");

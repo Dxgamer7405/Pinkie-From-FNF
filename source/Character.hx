@@ -10,6 +10,8 @@ import openfl.Assets;
 import sys.FileSystem;
 import sys.io.File;
 import animateatlas.AtlasFrameMaker;
+import lime.utils.Assets;
+
 using StringTools;
 
 class Character extends FlxSprite
@@ -721,7 +723,7 @@ class Character extends FlxSprite
 			if (Util.exists(TitleState.curDir + "/shared/images/characters/" + curCharacter + "Offsets.txt")){
 				data = Util.getContent(TitleState.curDir + "/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}else{
-				data = Util.getContent("assets/shared/images/characters/"+curCharacter+"Offsets.txt");
+				data = Util.getContent("shared:assets/shared/images/characters/"+curCharacter+"Offsets.txt");
 			}
 			
 			
