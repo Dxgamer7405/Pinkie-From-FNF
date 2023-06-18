@@ -103,7 +103,7 @@ class Note extends FlxSprite
 				
 				
 				
-			var path = "";
+			var path = "shared:assets/shared/images/";
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			var stopLookin = false;
 			var daTex = PlayState.SONG.noteskin;
@@ -119,7 +119,7 @@ class Note extends FlxSprite
 					}
 				}
 			}
-			trace(daTex+": "+path);
+			trace(daTex+":shared:assets/shared/images/"+path);
 				frames = FlxAtlasFrames.fromSparrow(Paths.getbmp(daTex), Util.getContent(path));//Paths.getSparrowAtlas('NOTE_assets');
 
 				animation.addByPrefix('greenScroll', 'green0');
@@ -204,12 +204,12 @@ class Note extends FlxSprite
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			for (i in balls){
 				
-				if (Util.exists(i + "/shared:assets/shared/images/"+char+".png")){
-					path = i + "/shared:assets/shared/images/"+char+".png";
+				if (Util.exists(i + "shared:assets/shared/images/"+char+".png")){
+					path = i + "shared:assets/shared/images/"+char+".png";
 					break;
 				}
-				if (Util.exists("mods/"+ i + "/shared:assets/shared/images/"+char+".png")){
-					path = "mods/" + i + "/shared:assets/shared/images/"+char+".png";
+				if (Util.exists("mods/"+ i + "shared:assets/shared/images/"+char+".png")){
+					path = "mods/" + i + "shared:assets/shared/images/"+char+".png";
 					break;
 				}
 			}
