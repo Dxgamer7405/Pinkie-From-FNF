@@ -112,8 +112,8 @@ class Note extends FlxSprite
 			}
 			for (i in balls){
 				if (!stopLookin){
-					if (Util.exists(i + "shared:assets/shared/images/"+daTex+".xml")){
-						path = i + "shared:assets/shared/images/"+daTex+".xml";
+					if (Util.exists(i + "/shared:assets/shared/images/"+daTex+".xml")){
+						path = i + "/shared:assets/shared/images/"+daTex+".xml";
 						stopLookin = true;
 						break;
 					}
@@ -204,12 +204,12 @@ class Note extends FlxSprite
 			var balls:Array<String> = [TitleState.curDir,"assets"];
 			for (i in balls){
 				
-				if (Util.exists(i + "shared:assets/shared/images/characters/"+char+".png")){
-					path = i + "shared:assets/shared/images/characters/"+char+".png";
+				if (Util.exists(i + "/shared:assets/shared/images/"+char+".png")){
+					path = i + "/shared:assets/shared/images/"+char+".png";
 					break;
 				}
-				if (Util.exists("mods/"+ i + "shared:assets/shared/images/characters/"+char+".png")){
-					path = "mods/" + i + "shared:assets/shared/images/characters/"+char+".png";
+				if (Util.exists("mods/"+ i + "/shared:assets/shared/images/"+char+".png")){
+					path = "mods/" + i + "/shared:assets/shared/images/"+char+".png";
 					break;
 				}
 			}
