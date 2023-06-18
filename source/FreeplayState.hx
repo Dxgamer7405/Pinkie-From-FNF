@@ -190,7 +190,7 @@ class FreeplayState extends MusicBeatState
 		add(CoolUtil.addSprite(0, 649, "freeplaymenu/controls", 0));
 		
 	  #if mobile
-    addVirtualPad(UP_DOWN, A_B_C);
+    addVirtualPad(LEFT_FULL, A_B_C);
     #end
 
 		super.create();
