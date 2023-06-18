@@ -126,9 +126,9 @@ class Main extends Sprite
 		Sys.exit(1);
 	}
 	#end
-}
 
 	public function getFPSCap():Float
 	{
 		return openfl.Lib.current.stage.frameRate;
 	}
+}
