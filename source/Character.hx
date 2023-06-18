@@ -46,7 +46,7 @@ class Character extends FlxSprite
 				
 				if (PlayState.isPony){
 				
-					var tex = FlxAtlasFrames.fromSparrow('characters/gfpone.png', 'characters/gfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/characters/gfpone.png', 'assets/shared/images/characters/gfpone.xml');
 					frames = tex;
 					
 					
@@ -58,7 +58,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = Util.getContent("characters/gfPonyOffsets.txt");
+			var data = Util.getContent("assets/shared/images/characters/gfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);
@@ -254,9 +254,9 @@ class Character extends FlxSprite
 
 			case 'bf':
 				if (PlayState.isPony){
-					var tex = FlxAtlasFrames.fromSparrow('characters/bfpone.png', 'characters/bfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/characters/bfpone.png', 'assets/shared/images/characters/bfpone.xml');
 					frames = tex;
-					animation.addByPrefix('idle', 'BF idle', 24, false);
+					animation.addByPrefix('idlexBF idle', 24, false);
 					animation.addByPrefix('singUP', 'BF up', 24, false);
 					animation.addByPrefix('singLEFT', 'BF left', 24, false);
 					animation.addByPrefix('singRIGHT', 'BF right', 24, false);
@@ -274,7 +274,7 @@ class Character extends FlxSprite
 					
 					
 					var offsets:Array<String>;
-			var data = Util.getContent("characters/bfPonyOffsets.txt");
+			var data = Util.getContent("assets/shared/images/characters/bfPonyOffsets.txt");
 			
 			
 			offsets = CoolUtil.coolTextFile2(data);
