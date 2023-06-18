@@ -162,17 +162,6 @@ class MainMenuState extends MusicBeatState
 	}
 	override function update(elapsed:Float)
 	{
-		#if mobile
-    var justTouched:Bool = false;
-		for (touch in FlxG.touches.list)
-		  {
-		  	if (touch.justPressed)
-			   {
-				   justTouched = true;
-			   }
-		   }
-		 #end
-
     Conductor.songPosition = FlxG.sound.music.time;
 		FlxG.mouse.visible = true;
 		if (FlxG.sound.music.volume < 0.8)
@@ -184,7 +173,7 @@ class MainMenuState extends MusicBeatState
 		{
 			
 			
-			if (FlxG.mouse.overlaps(trixie) && FlxG.mouse.justPressed #if mobile || justTouched #end && !trixied){
+			if (FlxG.mouse.overlaps(trixie) && FlxG.mouse.justPressed && !trixied){
 				trixied = true;
 		trixie.animation.play('notice');
 				new FlxTimer().start(1, function(e:FlxTimer){
