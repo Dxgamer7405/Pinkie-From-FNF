@@ -183,7 +183,7 @@ class DialogueBox extends FlxSpriteGroup
 		dropText.alpha = 0;
 		dropText.alignment = 'center';
 		add(dropText);
-		skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
+		skipText = new FlxText(5, 695, 640, "Press BACK to skip the dialogue.\n", 40);
 		skipText.scrollFactor.set(0, 0);
 		skipText.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		skipText.borderSize = 2;
@@ -251,7 +251,7 @@ class DialogueBox extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		if(FlxG.keys.justPressed.SPACE && !isEnding){
+		if(FlxG.keys.justPressed.SPACE #if mobile || FlxG.android.justReleased.BACK #end && !isEnding){
 
 			isEnding = true;
 			endDialogue();
@@ -269,13 +269,13 @@ class DialogueBox extends FlxSpriteGroup
 		   }
 		 #end
 
-		if (FlxG.keys.justPressed.SHIFT && !inAutoText && dialogueStarted == true && !canAdvance && !isEnding)
+		if (FlxG.keys.justPressed.SHIFT #if mobile || justTouched #end && !inAutoText && dialogueStarted == true && !canAdvance && !isEnding)
 		{
 			timeBeforeSkip.cancel();
 			canAdvance = true;
 			swagDialogue.skip();
 		}
-		if (FlxG.keys.justPressed.ENTER #if mobile || justTouched #end && dialogueStarted == true && canAdvance && !isEnding)
+		if (FlxG.keys.justPressed.ENTER && dialogueStarted == true && canAdvance && !isEnding)
 		{
 			if (wasHidden){
 				wasHidden = false;
