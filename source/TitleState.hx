@@ -61,11 +61,13 @@ class TitleState extends MusicBeatState
 	 for (i in Util.readDirectory("assets/mods"))
 	 {
 		 if (i.endsWith('fileCheck.txt'))
+		 {
         i.replace('fileCheck.txt', '');
         directories.push(i);
         trace(i);
+		 }
    }
-  }
+ }
 
 		OptionUtils.bindSave();
 		OptionUtils.loadOptions(OptionUtils.options);
