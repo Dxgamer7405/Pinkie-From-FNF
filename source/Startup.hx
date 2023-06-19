@@ -17,6 +17,7 @@ import openfl.display.BitmapData;
 import sys.FileSystem;
 import flixel.FlxG;
 import haxe.ds.Map;
+import lime.utils.Assets;
 
 using StringTools;
 
@@ -32,8 +33,8 @@ class Startup extends MusicBeatState
 	"Breaking-Point",
     "Green-Hill", "Racing", "Boom", "Happy-Time"];*/
 	public var atlist = [
-	'characters/discord_assets',
-	'characters/discord_end'
+	'shared:assets/shared/characters/discord_assets',
+	'shared:assets/shared/characters/discord_end'
 	];
     public static var atlasFrames:Map<String, FlxFramesCollection> = new Map<String, FlxFramesCollection>();
 	public static var indx = 0;
