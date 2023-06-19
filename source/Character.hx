@@ -256,7 +256,7 @@ class Character extends FlxSprite
 				if (PlayState.isPony){
 					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/characters/bfpone.png', 'assets/shared/images/characters/bfpone.xml');
 					frames = tex;
-					animation.addByPrefix('idlexBF idle', 24, false);
+					animation.addByPrefix('idle', 'BF idle', 24, false);
 					animation.addByPrefix('singUP', 'BF up', 24, false);
 					animation.addByPrefix('singLEFT', 'BF left', 24, false);
 					animation.addByPrefix('singRIGHT', 'BF right', 24, false);
