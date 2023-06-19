@@ -1,0 +1,6 @@
+prefix idle 24 scootaloo idle
+prefix singUP 24 scootaloo up
+prefix singLEFT 24 scootaloo right
+prefix singDOWN 24 scootaloo down
+prefix singRIGHT 24 scootaloo left
+flipx

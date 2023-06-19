@@ -1,0 +1,5 @@
+idle 0 0
+blank1 0 21
+blank2 0 21
+slidein 106 383
+mine 49 35

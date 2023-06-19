@@ -1,0 +1,6 @@
+prefix idle 24 bloom idle
+prefix singUP 24 bloom up
+prefix singLEFT 24 bloom right
+prefix singDOWN 24 bloom down
+prefix singRIGHT 24 bloom left
+flipx

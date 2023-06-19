@@ -1,0 +1,15 @@
+prefix idle 24 pinkie idle
+prefix singUP 24 pinkie up
+prefix singRIGHT 24 pinkie left
+prefix singDOWN 24 pinkie down
+prefix singLEFT 24 pinkie right
+
+prefix idle-alt 24 pinkie alt idle
+prefix singUP-alt 24 pinkie up
+prefix singRIGHT-alt 24 pinkie left
+prefix singDOWN-alt 24 pinkie down
+prefix singLEFT-alt 24 pinkie right
+
+prefix talk1 24 pinkie talk1
+prefix talk2 24 pinkie talk2
+flipx

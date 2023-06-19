@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TextureAtlas imagePath="doesnt matter.png" width="1632" height="272">
+	<SubTexture name="left0000" x="0" y="0" width="272" height="272"/>
+	<SubTexture name="right0000" x="272" y="0" width="272" height="272"/>
+	<SubTexture name="down0000" x="544" y="0" width="272" height="272"/>
+	<SubTexture name="up0000" x="816" y="0" width="272" height="272"/>
+	<SubTexture name="idle0000" x="1088" y="0" width="272" height="272"/>
+	<SubTexture name="talk0000" x="1360" y="0" width="272" height="272"/>
+	<SubTexture name="talk0001" x="1088" y="0" width="272" height="272"/>
+</TextureAtlas>

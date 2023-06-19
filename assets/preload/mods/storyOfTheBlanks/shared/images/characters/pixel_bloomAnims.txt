@@ -1,0 +1,12 @@
+prefix idle 15 idle
+prefix singUP 24 up
+prefix singLEFT 24 right
+prefix singDOWN 24 down
+prefix singRIGHT 24 left
+prefix idle-alt 15 alt idle
+prefix singUP-alt 24 alt up
+prefix singLEFT-alt 24 alt right
+prefix singDOWN-alt 24 alt down
+prefix singRIGHT-alt 24 alt left
+camofs 60,100
+flipx

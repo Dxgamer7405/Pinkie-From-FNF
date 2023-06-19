@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TextureAtlas imagePath="doesnt matter.png" width="672" height="28">
+	<SubTexture name="purple0000" x="0" y="0" width="28" height="28"/>
+	<SubTexture name="blue0000" x="28" y="0" width="28" height="28"/>
+	<SubTexture name="green0000" x="56" y="0" width="28" height="28"/>
+	<SubTexture name="red0000" x="84" y="0" width="28" height="28"/>
+	<SubTexture name="left confirm0000" x="112" y="0" width="28" height="28"/>
+	<SubTexture name="down confirm0000" x="140" y="0" width="28" height="28"/>
+	<SubTexture name="up confirm0000" x="168" y="0" width="28" height="28"/>
+	<SubTexture name="right confirm0000" x="196" y="0" width="28" height="28"/>
+	<SubTexture name="arrowLEFT0000" x="224" y="0" width="28" height="28"/>
+	<SubTexture name="arrowDOWN0000" x="252" y="0" width="28" height="28"/>
+	<SubTexture name="arrowUP0000" x="280" y="0" width="28" height="28"/>
+	<SubTexture name="arrowRIGHT0000" x="308" y="0" width="28" height="28"/>
+	<SubTexture name="left press0000" x="336" y="0" width="28" height="28"/>
+	<SubTexture name="down press0000" x="364" y="0" width="28" height="28"/>
+	<SubTexture name="up press0000" x="392" y="0" width="28" height="28"/>
+	<SubTexture name="right press0000" x="420" y="0" width="28" height="28"/>
+	<SubTexture name="purple hold piece0000" x="448" y="0" width="28" height="9"/>
+	<SubTexture name="blue hold piece0000" x="476" y="0" width="28" height="9"/>
+	<SubTexture name="green hold piece0000" x="504" y="0" width="28" height="9"/>
+	<SubTexture name="red hold piece0000" x="532" y="0" width="28" height="9"/>
+	<SubTexture name="pruple end hold0000" x="560" y="0" width="28" height="9"/>
+	<SubTexture name="blue hold end0000" x="588" y="0" width="28" height="9"/>
+	<SubTexture name="green hold end0000" x="616" y="0" width="28" height="9"/>
+	<SubTexture name="red hold end0000" x="644" y="0" width="28" height="9"/>
+</TextureAtlas>

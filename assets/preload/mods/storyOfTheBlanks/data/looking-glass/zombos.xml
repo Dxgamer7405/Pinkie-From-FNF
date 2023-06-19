@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TextureAtlas imagePath="doesnt matter.png" width="1352" height="185">
+	<SubTexture name="anim0000" x="0" y="0" width="338" height="185"/>
+	<SubTexture name="anim0001" x="338" y="0" width="338" height="185"/>
+	<SubTexture name="anim0002" x="676" y="0" width="338" height="185"/>
+	<SubTexture name="anim0003" x="1014" y="0" width="338" height="185"/>
+</TextureAtlas>

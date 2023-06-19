@@ -1,0 +1,12 @@
+prefix idle 24 amy idle
+prefix singUP 24 amy up
+prefix singLEFT 24 amy left
+prefix singDOWN 24 amy down
+prefix singRIGHT 24 amy right
+prefix idle-alt 24 amy alt idle
+prefix singUP-alt 24 amy up
+prefix singLEFT-alt 24 amy left
+prefix singDOWN-alt 24 amy down
+prefix singRIGHT-alt 24 amy right
+prefix talk1 24 amy talk1
+prefix talk2 24 amy talk2

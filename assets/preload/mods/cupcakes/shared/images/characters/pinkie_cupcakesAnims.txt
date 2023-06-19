@@ -1,0 +1,33 @@
+indices danceLeft 24 pinkie idle/0 1 2 3
+indices danceRight 24 pinkie idle/4 5 6 7
+prefix singUP 24 pinkie up
+prefix singLEFT 24 pinkie left
+prefix singDOWN 24 pinkie down
+prefix singRIGHT 24 pinkie right
+
+indices danceLeft-chainsaw 24 pinkie blood idle/0 1 2 3
+indices danceRight-chainsaw 24 pinkie blood idle/4 5 6 7
+prefix singUP-chainsaw 24 pinkie chainsaw up
+prefix singLEFT-chainsaw 24 pinkie chainsaw left
+prefix singDOWN-chainsaw 24 pinkie chainsaw down
+prefix singRIGHT-chainsaw 24 pinkie chainsaw right
+
+indices danceLeft-blood 24 pinkie blood idle/0 1 2 3
+indices danceRight-blood 24 pinkie blood idle/4 5 6 7
+prefix singUP-blood 24 pinkie blood up
+prefix singLEFT-blood 24 pinkie blood left
+prefix singDOWN-blood 24 pinkie blood down
+prefix singRIGHT-blood 24 pinkie blood right
+
+indices danceLeft-bloody 24 pinkie bloody idle/0 1 2 3
+indices danceRight-bloody 24 pinkie bloody idle/4 5 6 7
+prefix singUP-bloody 24 pinkie bloody up
+prefix singLEFT-bloody 24 pinkie bloody left
+prefix singDOWN-bloody 24 pinkie bloody down
+prefix singRIGHT-bloody 24 pinkie bloody right
+prefix grab 24 pinkie bloody grab
+
+prefix singUP-laugh 24 pinkie haha
+prefix saw 24 pinkie cut
+prefix chainsaw 24 pinkie chainsaw0
+prefix chainsaw-bloody 24 pinkie bloody chainsaw

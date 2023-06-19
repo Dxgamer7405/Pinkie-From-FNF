@@ -1,0 +1,5 @@
+prefix idle 24 silver idle
+prefix blank1 24 silver blank1
+prefix blank2 24 silver blank2
+prefix slidein 24 silver slidein
+prefix mine 24 silver mine
