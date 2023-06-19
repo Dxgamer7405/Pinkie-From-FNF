@@ -65,7 +65,6 @@ class TitleState extends MusicBeatState
         directories.push(i);
         trace(i);
        }
-		 }
 	 }
 
 		OptionUtils.bindSave();
