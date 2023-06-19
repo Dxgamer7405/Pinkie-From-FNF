@@ -50,7 +50,7 @@ class Util
     #if mobile 
     for (folder in Assets.list().filter(text -> text.contains(library)))
     {
-      if (!folder.startsWith('.'))
+      if (!folder.startsWith('.') && !something.contains(folder))
       something.push(folder);
     }
     return something;
