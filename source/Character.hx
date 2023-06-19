@@ -43,7 +43,7 @@ class Character extends FlxSprite
 			case 'gf':
 				// GIRLFRIEND CODE
 				if (PlayState.isPony){
-					var tex = FlxAtlasFrames.fromSparrow('characters/gfpone.png','shared');
+					var tex = FlxAtlasFrames.fromSparrow('characters/gfpone','shared');
 					frames = tex;
 				animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
 				animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
