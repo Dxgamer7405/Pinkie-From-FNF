@@ -42,32 +42,14 @@ class Character extends FlxSprite
 		{
 			case 'gf':
 				// GIRLFRIEND CODE
-				
-				
 				if (PlayState.isPony){
-				
-					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/characters/gfpone.png', 'assets/shared/images/characters/gfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('characters/gfpone.png', 'characters/gfpone.xml');
 					frames = tex;
-					
-					
-					
 				animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
 				animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 				animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-				
-					
-					
-					var offsets:Array<String>;
-			var data = Util.getContent("assets/shared/images/characters/gfPonyOffsets.txt");
-			
-			
-			offsets = CoolUtil.coolTextFile2(data);
-			Cache.offsetData[curCharacter] = data;
-		for(s in offsets){
-			var stuff:Array<String> = s.split(" ");
-			addOffset(stuff[0],Std.parseFloat(stuff[1]),Std.parseFloat(stuff[2]));
+				loadOffsets();
 		}
-				
 				}else{
 				tex = Paths.getSparrowAtlas('characters/GF_assets','shared');
 				frames = tex;
@@ -254,7 +236,7 @@ class Character extends FlxSprite
 
 			case 'bf':
 				if (PlayState.isPony){
-					var tex = FlxAtlasFrames.fromSparrow('assets/shared/images/characters/bfpone.png', 'assets/shared/images/characters/bfpone.xml');
+					var tex = FlxAtlasFrames.fromSparrow('characters/bfpone.png', 'characters/bfpone.xml');
 					frames = tex;
 					animation.addByPrefix('idle', 'BF idle', 24, false);
 					animation.addByPrefix('singUP', 'BF up', 24, false);
@@ -272,19 +254,8 @@ class Character extends FlxSprite
 
 					animation.addByPrefix('scared', 'BF idle shaking', 24);
 					
-					
-					var offsets:Array<String>;
-			var data = Util.getContent("assets/shared/images/characters/bfPonyOffsets.txt");
-			
-			
-			offsets = CoolUtil.coolTextFile2(data);
-			Cache.offsetData[curCharacter] = data;
-		for(s in offsets){
-			var stuff:Array<String> = s.split(" ");
-			addOffset(stuff[0],Std.parseFloat(stuff[1]),Std.parseFloat(stuff[2]));
+					loadOffsets();
 		}
-					
-					
 				}else{
 					var tex = Paths.getSparrowAtlas('characters/BOYFRIEND','shared');
 					frames = tex;
