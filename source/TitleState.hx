@@ -67,7 +67,6 @@ class TitleState extends MusicBeatState
         trace(i);
 		 }
    }
- }
 
 		OptionUtils.bindSave();
 		OptionUtils.loadOptions(OptionUtils.options);
