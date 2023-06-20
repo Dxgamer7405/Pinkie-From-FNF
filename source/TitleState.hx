@@ -58,7 +58,8 @@ class TitleState extends MusicBeatState
 
  	 directories = [];
 	
-	 for (i in Util.readDirectory("assets/mods"))
+	/*
+	 for (i in Util.readDirectory("mods"))
 	 {
 		 if (i.endsWith('fileCheck.txt'))
 		 {
@@ -67,7 +68,8 @@ class TitleState extends MusicBeatState
         trace(i);
 		 }
    }
-
+  */
+  
 		OptionUtils.bindSave();
 		OptionUtils.loadOptions(OptionUtils.options);
 		PlayerSettings.init();
