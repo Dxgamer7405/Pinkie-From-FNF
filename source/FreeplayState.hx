@@ -58,14 +58,14 @@ class FreeplayState extends MusicBeatState
 		}
 
 		for (u in TitleState.directories){
-			var bobsongs = CoolUtil.coolTextFile3('mods/' + u + '/data/freeplaySonglist.txt');
+			var bobsongs = CoolUtil.coolTextFile3(u + '/mods/data/freeplaySonglist.txt');
 			
 			for (i in 0...bobsongs.length)
 			{
 				var data = bobsongs[i].split(" ");
 				var icon = data.splice(0,1)[0];
 				songs.push(new SongMetadata(data.join(" "), 1, icon));
-				dirs.push('mods/'+u);
+				dirs.push(u+'mods/');
 			}
 			TitleState.curDir = "assets";
 		}
