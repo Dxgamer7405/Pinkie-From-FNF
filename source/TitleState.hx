@@ -58,10 +58,18 @@ class TitleState extends MusicBeatState
 
  	 directories = [];
 	
+	 for (i in Util.readDirectory("mods")){
+		
+		 if (!i.contains(".") && i != "assets/mods"){
+			 directories.push(i);
+			 trace(i);
+		 }
+	 }
+	
 	/*
 	 for (i in Util.readDirectory("mods"))
 	 {
-		 if (i.endsWith('fileCheck.txt'))
+		 // if (i.endsWith('fileCheck.txt'))
 		 {
         i.replace('fileCheck.txt', '');
         directories.push(i);
