@@ -40,36 +40,6 @@ class Character extends FlxSprite
 
 		switch (curCharacter)
 		{
-			case 'bloom':
-			// does nothing
-		}
-			case 'babs':
-			// does nothing
-		}
-			case 'pie':
-			// does nothing
-		}
-			case 'amy':
-			// does nothing
-		}
-			case 'bf_cupcakes':
-			// does nothing
-		}
-			case 'pinkie_cupcakes':
-			// does nothing
-		}
-			case 'jack':
-			// does nothing
-		}
-			case 'capt':
-			// does nothing
-		}
-			case 'pixel_bloom':
-			// does nothing
-		}
-			case 'threeleaf':
-			// does nothing
-		}
 			case 'gf':
 				// GIRLFRIEND CODE
 				if (PlayState.isPony){
@@ -114,6 +84,26 @@ class Character extends FlxSprite
 				animation.addByPrefix('scared', 'GF FEAR', 24);
 				loadOffsets();
 				playAnim('danceRight');
+			case 'bloom':
+			// does nothing
+			case 'babs':
+			// does nothing
+			case 'pie':
+			// does nothing
+			case 'amy':
+			// does nothing
+			case 'bf_cupcakes':
+			// does nothing
+			case 'pinkie_cupcakes':
+			// does nothing
+			case 'jack':
+			// does nothing
+			case 'capt':
+			// does nothing
+			case 'pixel_bloom':
+			// does nothing
+			case 'threeleaf':
+			// does nothing
 			case 'gf-christmas':
 				tex = Paths.getSparrowAtlas('characters/gfChristmas','shared');
 				frames = tex;

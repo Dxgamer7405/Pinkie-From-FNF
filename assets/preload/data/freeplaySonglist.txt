@@ -3,8 +3,8 @@ pinkie Smile
 pinkie FUN
 discord Discord
 pinkie-hd Smile-HD
-bf-old Guerrilla-Gal
-dad Babs-sneed
-pinkie Cupcakes
-mom Looking-glass
-spooky Blockhead
+jack Guerrilla-Gal
+babs Babs-sneed
+pinkie_cupcakes Cupcakes
+pixel_bloom Looking-glass
+amy Blockhead
