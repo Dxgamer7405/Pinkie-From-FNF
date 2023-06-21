@@ -39,33 +39,43 @@ class HealthIcon extends FlxSprite
 		}else if (char == 'discord'){
 		loadGraphic(Paths.image('icons-discord'), true, 150, 150);
 
+		animation.add('bloom', [0, 1], 0, false);
 		}else if (char == 'bloom'){
 		loadGraphic(Paths.image('icon-bloom'), true, 150, 150);
 
+		animation.add('babs', [0, 1], 0, false);
 		}else if (char == 'babs'){
 		loadGraphic(Paths.image('icon-babs'), true, 150, 150);
 
+		animation.add('pie', [0, 1], 0, false);
 		}else if (char == 'pie'){
 		loadGraphic(Paths.image('icon-pie'), true, 150, 150);
 
+		animation.add('amy', [0, 1], 0, false);
 		}else if (char == 'amy'){
 		loadGraphic(Paths.image('icon-amy'), true, 150, 150);
 
+		animation.add('bf_cupcakes', [0, 1], 0, false);
 		}else if (char == 'bf_cupcakes'){
 		loadGraphic(Paths.image('icon-bf_cupcakes'), true, 150, 150);
 
+		animation.add('pinkie_cupcakes', [0, 1], 0, false);
 		}else if (char == 'pinkie_cupcakes'){
 		loadGraphic(Paths.image('icon-pinkie_cupcakes'), true, 150, 150);
 
+		animation.add('jack', [0, 1], 0, false);
 		}else if (char == 'jack'){
 		loadGraphic(Paths.image('icon-jack'), true, 150, 150);
 
+		animation.add('capt', [0, 1], 0, false);
 		}else if (char == 'capt'){
 		loadGraphic(Paths.image('icon-capt'), true, 150, 150);
 
+		animation.add('pixel_bloom', [0, 1], 0, false);
 		}else if (char == 'pixel_bloom'){
 		loadGraphic(Paths.image('icon-pixel_bloom'), true, 150, 150);
 
+		animation.add('threeleaf', [0, 1], 0, false);
 		}else if (char == 'threeleaf'){
 		loadGraphic(Paths.image('icon-threeleaf'), true, 150, 150);
 
