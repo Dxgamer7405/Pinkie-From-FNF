@@ -36,9 +36,38 @@ class HealthIcon extends FlxSprite
 		}else if (char == 'pinkie-hd'){
 		loadGraphic(Paths.image('icons-hd'), true, 150, 150);
 
-		animation.add('pinkie-hd', [0, 1], 0, false);
 		}else if (char == 'discord'){
 		loadGraphic(Paths.image('icons-discord'), true, 150, 150);
+
+		}else if (char == 'bloom'){
+		loadGraphic(Paths.image('icon-bloom'), true, 150, 150);
+
+		}else if (char == 'babs'){
+		loadGraphic(Paths.image('icon-babs'), true, 150, 150);
+
+		}else if (char == 'pie'){
+		loadGraphic(Paths.image('icon-pie'), true, 150, 150);
+
+		}else if (char == 'amy'){
+		loadGraphic(Paths.image('icon-amy'), true, 150, 150);
+
+		}else if (char == 'bf_cupcakes'){
+		loadGraphic(Paths.image('icon-bf_cupcakes'), true, 150, 150);
+
+		}else if (char == 'pinkie_cupcakes'){
+		loadGraphic(Paths.image('icon-pinkie_cupcakes'), true, 150, 150);
+
+		}else if (char == 'jack'){
+		loadGraphic(Paths.image('icon-jack'), true, 150, 150);
+
+		}else if (char == 'capt'){
+		loadGraphic(Paths.image('icon-capt'), true, 150, 150);
+
+		}else if (char == 'pixel_bloom'){
+		loadGraphic(Paths.image('icon-pixel_bloom'), true, 150, 150);
+
+		}else if (char == 'threeleaf'){
+		loadGraphic(Paths.image('icon-threeleaf'), true, 150, 150);
 
 		animation.add(char, [0, 1], 0, false);
 		}else{
