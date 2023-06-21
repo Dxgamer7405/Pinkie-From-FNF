@@ -553,11 +553,11 @@ class Character extends FlxSprite
 							path = boobs;
 							break;
 						}
-					
+		    	}
+		    	
 					trace(curCharacter + ":" + path);
 						frames = AtlasFrameMaker.construct(StringTools.replace(path,'/spritemap.png',''));//FlxAtlasFrames.fromSparrow(getbmp(curCharacter),Util.getContent(path));
 						Cache.charFrames[curCharacter]=frames;
-			}
 				}else{
 					for (i in balls){
 						var boobs = "shared:" + i + "/shared/images/characters/" + curCharacter + ".xml";
@@ -650,8 +650,10 @@ class Character extends FlxSprite
 			for (i in balls){
 					path = "shared:" + i + "/shared/images/characters/" + curCharacter + ".png";
 					break;
+			}
 					path = "mods/" + i + "shared:assets/shared/images/characters/" + curCharacter + ".png";
 					break;
+    		}
 			}
 			trace(curCharacter + ":" + path);
 			
