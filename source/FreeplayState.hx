@@ -58,26 +58,23 @@ class FreeplayState extends MusicBeatState
 		}
 
 		for (u in TitleState.directories){
-			var bobsongs = CoolUtil.coolTextFile3('mods/' + u + '/data/freeplaySonglist.txt');
+    var bobsongs = CoolUtil.coolTextFile3('mods/' + u + '/data/freeplaySonglist.txt');
 			
 			for (i in 0...bobsongs.length)
 			{
 				var data = bobsongs[i].split(" ");
 				var icon = data.splice(0,1)[0];
 				songs.push(new SongMetadata(data.join(" "), 1, icon));
-				dirs.push(u+'assets/mods/');
+				dirs.push('mods/'+u)
 			}
 			TitleState.curDir = "assets";
 		}
-		
-		
 
 			if (FlxG.sound.music != null)
 			{
 				if (!FlxG.sound.music.playing)
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 			}
-
 
 		#if desktop
 		// Updating Discord Rich Presence
@@ -96,10 +93,6 @@ class FreeplayState extends MusicBeatState
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
 		add(bg);
-
-		
-		
-		
 		
 		add(CoolUtil.addSprite( -67.5, -84.6, "freeplaymenu/bg", 0));
 		add(speakers = CoolUtil.addAnimPrefix(515, 188, "freeplaymenu/speakers", "speakers", 0, false));
@@ -120,7 +113,6 @@ class FreeplayState extends MusicBeatState
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
 
-		
 		for (i in 0...songs.length)
 		{
 			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName.split("-").join(" "), true, false);

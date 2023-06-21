@@ -3300,9 +3300,9 @@ class PlayState extends MusicBeatState
 					FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
 					FlxG.save.flush();
 					trace(SONG.song.toLowerCase());
-					if (SONG.song.toLowerCase() == 'discord' ){
+					if (SONG.song.toLowerCase() == 'tutorial' ){
 						if(isPony){
-							FlxG.switchState(new CutsceneState("mods/introMod/_append/Twi End Cutscene.mp4", function(){
+							FlxG.switchState(new CutsceneState("assets/videos/Twi End Cutscene.mp4", function(){
 								FlxG.switchState(new CutsceneState("assets/videos/credits-pony.mp4", CutsceneState.end ));
 							}));
 						}else{

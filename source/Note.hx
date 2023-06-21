@@ -202,6 +202,8 @@ class Note extends FlxSprite
 			for (i in balls){
 					path = "shared:" + i + "/shared/images/"+char+".png";
 					break;
+					path = "mods/" + i + "/shared/images/"+char+".png";
+					break;
 			}
 			var gra:FlxGraphic;
 			var bmp = BitmapData.fromFile(path);
