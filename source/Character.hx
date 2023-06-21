@@ -557,11 +557,8 @@ class Character extends FlxSprite
 					trace(curCharacter + ":" + path);
 						frames = AtlasFrameMaker.construct(StringTools.replace(path,'/spritemap.png',''));//FlxAtlasFrames.fromSparrow(getbmp(curCharacter),Util.getContent(path));
 						Cache.charFrames[curCharacter]=frames;
-
+			}
 				}else{
-				
-			
-			
 					for (i in balls){
 						var boobs = "shared:" + i + "/shared/images/characters/" + curCharacter + ".xml";
 						trace(boobs);
