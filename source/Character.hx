@@ -548,12 +548,10 @@ class Character extends FlxSprite
 						trace(boobs);
 							path = boobs;
 							break;
-					}
 						boobs = "mods/" + i + "shared/images/characters/" + curCharacter + "/spritemap.png";
 							path = boobs;
 							break;
-						}
-		    	}
+					}
 		    	
 					trace(curCharacter + ":" + path);
 						frames = AtlasFrameMaker.construct(StringTools.replace(path,'/spritemap.png',''));//FlxAtlasFrames.fromSparrow(getbmp(curCharacter),Util.getContent(path));
@@ -564,7 +562,6 @@ class Character extends FlxSprite
 						trace(boobs);
 							path = boobs;
 							break;
-					}
 						boobs = "mods/" + i + "shared/images/characters/" + curCharacter + ".xml";
 							path = boobs;
 							break;
@@ -650,11 +647,9 @@ class Character extends FlxSprite
 			for (i in balls){
 					path = "shared:" + i + "/shared/images/characters/" + curCharacter + ".png";
 					break;
-			}
 					path = "mods/" + i + "shared:assets/shared/images/characters/" + curCharacter + ".png";
 					break;
     		}
-			}
 			trace(curCharacter + ":" + path);
 			
 			var gra:FlxGraphic;
