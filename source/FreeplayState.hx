@@ -65,7 +65,7 @@ class FreeplayState extends MusicBeatState
 				var data = bobsongs[i].split(" ");
 				var icon = data.splice(0,1)[0];
 				songs.push(new SongMetadata(data.join(" "), 1, icon));
-				dirs.push('mods/'+u)
+				dirs.push('mods/'+u);
 			}
 			TitleState.curDir = "assets";
 		}
