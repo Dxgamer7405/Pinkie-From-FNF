@@ -38,6 +38,7 @@ class HealthIcon extends FlxSprite
 
 		}else if (char == 'discord'){
 		loadGraphic(Paths.image('icons-discord'), true, 150, 150);
+		animation.add(char, [0, 1], 0, false);
 
 		}else if (char == 'bloom'){
 		loadGraphic(Paths.image('icon-bloom'), true, 150, 150);
@@ -79,7 +80,6 @@ class HealthIcon extends FlxSprite
 		loadGraphic(Paths.image('icon-threeleaf'), true, 150, 150);
 		animation.add('threeleaf', [0, 1], 0, false);
 
-		animation.add(char, [0, 1], 0, false);
 		}else{
 		loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 
